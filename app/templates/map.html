@@ -1,0 +1,3461 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <style>#map_f1cda5b7669a4cc39d0a653709c0c2a0 {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_f1cda5b7669a4cc39d0a653709c0c2a0" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_f1cda5b7669a4cc39d0a653709c0c2a0 = L.map(
+        'map_f1cda5b7669a4cc39d0a653709c0c2a0', {
+        center: [36.7783, -119.4179],
+        zoom: 6,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+    
+    
+    var tile_layer_a74a8df4f0594d7fb50a7e6dadb4157f = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "subdomains": "abc"
+}).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+    
+        var marker_cfc1e4d1beb04cac97d610db31b67f5d = L.marker(
+            [38.4865939, -122.401241],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_52a3882dd9b549ce82d744331918446b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cfc1e4d1beb04cac97d610db31b67f5d.setIcon(icon_52a3882dd9b549ce82d744331918446b);
+            
+    
+            var popup_492272e40c4f4bc9bffb933a2350ca54 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_46d8d282b43849a1a76090bddc1af3f7 = $('<div id="html_46d8d282b43849a1a76090bddc1af3f7" style="width: 100.0%; height: 100.0%;">DAKOTA SHY WINERY 771 Sage Canyon Road ST. HELENA CA 94574</div>')[0];
+                popup_492272e40c4f4bc9bffb933a2350ca54.setContent(html_46d8d282b43849a1a76090bddc1af3f7);
+            
+
+            marker_cfc1e4d1beb04cac97d610db31b67f5d.bindPopup(popup_492272e40c4f4bc9bffb933a2350ca54)
+            ;
+
+            
+        
+    
+        var marker_901fb74165614c35a7ab0c4ae2e94a37 = L.marker(
+            [36.4484546, -118.900023],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_d38b01876e1d466d908fb104051c3ccf = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_901fb74165614c35a7ab0c4ae2e94a37.setIcon(icon_d38b01876e1d466d908fb104051c3ccf);
+            
+    
+            var popup_ef486d3f23ce4276b75284a521342e99 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_338b14fdc2464a98a7a27aea3e30502e = $('<div id="html_338b14fdc2464a98a7a27aea3e30502e" style="width: 100.0%; height: 100.0%;">nan 42268 SIERRA DR THREE RIVERS CA 93271</div>')[0];
+                popup_ef486d3f23ce4276b75284a521342e99.setContent(html_338b14fdc2464a98a7a27aea3e30502e);
+            
+
+            marker_901fb74165614c35a7ab0c4ae2e94a37.bindPopup(popup_ef486d3f23ce4276b75284a521342e99)
+            ;
+
+            
+        
+    
+        var marker_9bc504e8f2fc423eaef25c7dd54b7b98 = L.marker(
+            [35.6970478, -120.6958349],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_07d608d3cebd48ee8fc9c75536a8e967 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9bc504e8f2fc423eaef25c7dd54b7b98.setIcon(icon_07d608d3cebd48ee8fc9c75536a8e967);
+            
+    
+            var popup_519e36c36c25453da796a9b1da7f2e9d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e7967db53e0e4b08a1ee5d935b205fa3 = $('<div id="html_e7967db53e0e4b08a1ee5d935b205fa3" style="width: 100.0%; height: 100.0%;">VINES R.V. RESORT 88 WELLSONA PASO RO CA 93446</div>')[0];
+                popup_519e36c36c25453da796a9b1da7f2e9d.setContent(html_e7967db53e0e4b08a1ee5d935b205fa3);
+            
+
+            marker_9bc504e8f2fc423eaef25c7dd54b7b98.bindPopup(popup_519e36c36c25453da796a9b1da7f2e9d)
+            ;
+
+            
+        
+    
+        var marker_0c364628e54f47e8b7e86edfd46a8e01 = L.marker(
+            [37.642326, -122.113223],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_9f728cf63d904b8c85657df51304ecd1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0c364628e54f47e8b7e86edfd46a8e01.setIcon(icon_9f728cf63d904b8c85657df51304ecd1);
+            
+    
+            var popup_c34c89531a5f494b97b4a715935a2a1b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b30455f637204bc9b334b7d5ac9e1fc7 = $('<div id="html_b30455f637204bc9b334b7d5ac9e1fc7" style="width: 100.0%; height: 100.0%;">MOHRLAND MUTUAL WATER SYSTEM 24927 Mohr Drive HAYWARD CA 94545</div>')[0];
+                popup_c34c89531a5f494b97b4a715935a2a1b.setContent(html_b30455f637204bc9b334b7d5ac9e1fc7);
+            
+
+            marker_0c364628e54f47e8b7e86edfd46a8e01.bindPopup(popup_c34c89531a5f494b97b4a715935a2a1b)
+            ;
+
+            
+        
+    
+        var marker_910a93600d274189953166f2ae39b101 = L.marker(
+            [37.7370767, -122.0277303],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_197a304422c9494c8c89e58d4c5263f3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_910a93600d274189953166f2ae39b101.setIcon(icon_197a304422c9494c8c89e58d4c5263f3);
+            
+    
+            var popup_1885db38e3ff49cea362e49805bff49f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bc1f785f5bbc46ca9f486b192380fb81 = $('<div id="html_bc1f785f5bbc46ca9f486b192380fb81" style="width: 100.0%; height: 100.0%;">NORRIS CANYON PROPERTY OWNERS ASSN. 8653 Norris Canyon Road CASTRO VALLEY CA 94552</div>')[0];
+                popup_1885db38e3ff49cea362e49805bff49f.setContent(html_bc1f785f5bbc46ca9f486b192380fb81);
+            
+
+            marker_910a93600d274189953166f2ae39b101.bindPopup(popup_1885db38e3ff49cea362e49805bff49f)
+            ;
+
+            
+        
+    
+        var marker_854e1de72fda4e90be44d688f4674509 = L.marker(
+            [37.7159947, -122.1460405],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_4fae393f9a6c45e9b6623679e91c7e06 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_854e1de72fda4e90be44d688f4674509.setIcon(icon_4fae393f9a6c45e9b6623679e91c7e06);
+            
+    
+            var popup_7b121e461aee4acab2d36d795f2fc0c4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3431649547be484fa2885d5b8a39e782 = $('<div id="html_3431649547be484fa2885d5b8a39e782" style="width: 100.0%; height: 100.0%;">TRAILER HAVEN MOBILE HOME PARK 2399 East 14th Street SPC 28 SAN LEANDRO CA 94577</div>')[0];
+                popup_7b121e461aee4acab2d36d795f2fc0c4.setContent(html_3431649547be484fa2885d5b8a39e782);
+            
+
+            marker_854e1de72fda4e90be44d688f4674509.bindPopup(popup_7b121e461aee4acab2d36d795f2fc0c4)
+            ;
+
+            
+        
+    
+        var marker_41d601aba2d84e9aa7aa74a3fdbceab3 = L.marker(
+            [34.2007083, -118.5277678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_5a462dfb2d0941c78b85040ef0a6a6c7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_41d601aba2d84e9aa7aa74a3fdbceab3.setIcon(icon_5a462dfb2d0941c78b85040ef0a6a6c7);
+            
+    
+            var popup_56097312268843c3854fe5dcff743d9a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e8d7d2eaa84f413a971f0182f39c5656 = $('<div id="html_e8d7d2eaa84f413a971f0182f39c5656" style="width: 100.0%; height: 100.0%;">THE SEQUOIANS nan nan CA nan</div>')[0];
+                popup_56097312268843c3854fe5dcff743d9a.setContent(html_e8d7d2eaa84f413a971f0182f39c5656);
+            
+
+            marker_41d601aba2d84e9aa7aa74a3fdbceab3.bindPopup(popup_56097312268843c3854fe5dcff743d9a)
+            ;
+
+            
+        
+    
+        var marker_85763ab919504ac9a4c2f47db43199cf = L.marker(
+            [34.2007083, -118.5277678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_b3a5dd615b884c5fa674958b45cc3d98 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_85763ab919504ac9a4c2f47db43199cf.setIcon(icon_b3a5dd615b884c5fa674958b45cc3d98);
+            
+    
+            var popup_180eb56fa5c54455929084b72aa63c5c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b8ea062796b64f87beab873b9cd2ccd0 = $('<div id="html_b8ea062796b64f87beab873b9cd2ccd0" style="width: 100.0%; height: 100.0%;">VAN COURT PUBLIC WATER SUPPLY nan nan CA nan</div>')[0];
+                popup_180eb56fa5c54455929084b72aa63c5c.setContent(html_b8ea062796b64f87beab873b9cd2ccd0);
+            
+
+            marker_85763ab919504ac9a4c2f47db43199cf.bindPopup(popup_180eb56fa5c54455929084b72aa63c5c)
+            ;
+
+            
+        
+    
+        var marker_cc403dbe759c443485188009e41613b6 = L.marker(
+            [34.2007083, -118.5277678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_2a330bd0e4324828886118b6b7824687 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cc403dbe759c443485188009e41613b6.setIcon(icon_2a330bd0e4324828886118b6b7824687);
+            
+    
+            var popup_17fd32f06ce24f649586dec25a004c9c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1dbc2f3917f94fefa1a3f67eb740eb0e = $('<div id="html_1dbc2f3917f94fefa1a3f67eb740eb0e" style="width: 100.0%; height: 100.0%;">CECILIA COURT WATER SYSTEM nan nan CA nan</div>')[0];
+                popup_17fd32f06ce24f649586dec25a004c9c.setContent(html_1dbc2f3917f94fefa1a3f67eb740eb0e);
+            
+
+            marker_cc403dbe759c443485188009e41613b6.bindPopup(popup_17fd32f06ce24f649586dec25a004c9c)
+            ;
+
+            
+        
+    
+        var marker_f0b4e82ee48f4725888f245c2ba1e349 = L.marker(
+            [37.55726, -121.9797604],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_d411ee4383d6417c92c78de1eb975a85 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f0b4e82ee48f4725888f245c2ba1e349.setIcon(icon_d411ee4383d6417c92c78de1eb975a85);
+            
+    
+            var popup_bd8fd7f1ee3e44448c09340b73ada7ac = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cd07eed81c6541acabf657b6aad2afac = $('<div id="html_cd07eed81c6541acabf657b6aad2afac" style="width: 100.0%; height: 100.0%;">WASHINGTON HOSPITAL HEALTHCARE SYSTEM 2000 Mowry Avenue FREMONT CA 94538</div>')[0];
+                popup_bd8fd7f1ee3e44448c09340b73ada7ac.setContent(html_cd07eed81c6541acabf657b6aad2afac);
+            
+
+            marker_f0b4e82ee48f4725888f245c2ba1e349.bindPopup(popup_bd8fd7f1ee3e44448c09340b73ada7ac)
+            ;
+
+            
+        
+    
+        var marker_c89313f618a44ad49266e31e05abaf0c = L.marker(
+            [34.2007083, -118.5277678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_5b1e904509914d0b9bbaaee925bb8842 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c89313f618a44ad49266e31e05abaf0c.setIcon(icon_5b1e904509914d0b9bbaaee925bb8842);
+            
+    
+            var popup_d04faf5f3a054e7faa7ea11189fb08d4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fc30b547ebe947ff9950d8f45f4d0412 = $('<div id="html_fc30b547ebe947ff9950d8f45f4d0412" style="width: 100.0%; height: 100.0%;">PYZER WATER SYSTEM nan nan CA nan</div>')[0];
+                popup_d04faf5f3a054e7faa7ea11189fb08d4.setContent(html_fc30b547ebe947ff9950d8f45f4d0412);
+            
+
+            marker_c89313f618a44ad49266e31e05abaf0c.bindPopup(popup_d04faf5f3a054e7faa7ea11189fb08d4)
+            ;
+
+            
+        
+    
+        var marker_f9708f4d55b0475ca731f47707e8b24d = L.marker(
+            [34.2007083, -118.5277678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_1244196497084074bf6f95860a988a68 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_f9708f4d55b0475ca731f47707e8b24d.setIcon(icon_1244196497084074bf6f95860a988a68);
+            
+    
+            var popup_bd5b03e8ef6c4bec89d62b46a8601964 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1130a8e57cc2479ab5a4626662924459 = $('<div id="html_1130a8e57cc2479ab5a4626662924459" style="width: 100.0%; height: 100.0%;">WEIBEL WATER SYSTEM nan nan CA nan</div>')[0];
+                popup_bd5b03e8ef6c4bec89d62b46a8601964.setContent(html_1130a8e57cc2479ab5a4626662924459);
+            
+
+            marker_f9708f4d55b0475ca731f47707e8b24d.bindPopup(popup_bd5b03e8ef6c4bec89d62b46a8601964)
+            ;
+
+            
+        
+    
+        var marker_19b6e2311f4c4a60824489e125275262 = L.marker(
+            [37.606751, -122.0399341],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_37a9404853254a8e80c7be9e8ae25c95 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19b6e2311f4c4a60824489e125275262.setIcon(icon_37a9404853254a8e80c7be9e8ae25c95);
+            
+    
+            var popup_1a0d54ddb5fc43ba889e4394e02743c8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_be357539e01b46689b559967968d0ca5 = $('<div id="html_be357539e01b46689b559967968d0ca5" style="width: 100.0%; height: 100.0%;">U. S. PIPE AND FOUNDRY 1295 Whipple Road UNION CITY CA 94587</div>')[0];
+                popup_1a0d54ddb5fc43ba889e4394e02743c8.setContent(html_be357539e01b46689b559967968d0ca5);
+            
+
+            marker_19b6e2311f4c4a60824489e125275262.bindPopup(popup_1a0d54ddb5fc43ba889e4394e02743c8)
+            ;
+
+            
+        
+    
+        var marker_1184ba3ac93d4354b7cc91c022a16e73 = L.marker(
+            [34.2007083, -118.5277678],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_21d7e4da961740eeaf5a76852caa794b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1184ba3ac93d4354b7cc91c022a16e73.setIcon(icon_21d7e4da961740eeaf5a76852caa794b);
+            
+    
+            var popup_2f78ebcba48c4efa91bec96cb5beac5e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9f3c65b47fbc4b17917e52e577d2157a = $('<div id="html_9f3c65b47fbc4b17917e52e577d2157a" style="width: 100.0%; height: 100.0%;">FREMONT COMMUNITY CHURCH nan nan CA nan</div>')[0];
+                popup_2f78ebcba48c4efa91bec96cb5beac5e.setContent(html_9f3c65b47fbc4b17917e52e577d2157a);
+            
+
+            marker_1184ba3ac93d4354b7cc91c022a16e73.bindPopup(popup_2f78ebcba48c4efa91bec96cb5beac5e)
+            ;
+
+            
+        
+    
+        var marker_ceca971583b24485b931acb742c7ec10 = L.marker(
+            [37.5193495, -122.0321345],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_ea79eaf6f1384694920987616ac7094f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ceca971583b24485b931acb742c7ec10.setIcon(icon_ea79eaf6f1384694920987616ac7094f);
+            
+    
+            var popup_aa9fe1b7590c47b1968bd6403f3fcc18 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_bdf1ba53109e49f1ace707c77f9edba7 = $('<div id="html_bdf1ba53109e49f1ace707c77f9edba7" style="width: 100.0%; height: 100.0%;">MORTON SALT COMPANY 7380 Morton Avenue NEWARK CA 94560</div>')[0];
+                popup_aa9fe1b7590c47b1968bd6403f3fcc18.setContent(html_bdf1ba53109e49f1ace707c77f9edba7);
+            
+
+            marker_ceca971583b24485b931acb742c7ec10.bindPopup(popup_aa9fe1b7590c47b1968bd6403f3fcc18)
+            ;
+
+            
+        
+    
+        var marker_56068f91440a4a8195220cbed3227971 = L.marker(
+            [37.7048711, -121.8115088],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_2ace356620654ffbb25460f79a379d2b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_56068f91440a4a8195220cbed3227971.setIcon(icon_2ace356620654ffbb25460f79a379d2b);
+            
+    
+            var popup_bffba001cfe64331a91b2b1c9ba9c6f8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ad2d1866885c416d8478ed88d2cb78e2 = $('<div id="html_ad2d1866885c416d8478ed88d2cb78e2" style="width: 100.0%; height: 100.0%;">VULCAN MATERIALS, CALMAT DIVISION 365 No Canyons Parkway LIVERMORE CA 94551</div>')[0];
+                popup_bffba001cfe64331a91b2b1c9ba9c6f8.setContent(html_ad2d1866885c416d8478ed88d2cb78e2);
+            
+
+            marker_56068f91440a4a8195220cbed3227971.bindPopup(popup_bffba001cfe64331a91b2b1c9ba9c6f8)
+            ;
+
+            
+        
+    
+        var marker_60a2052a0b434242ab3d122b7f1ae095 = L.marker(
+            [37.6436199, -121.8676464],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_9ce09690e0b44006a334e00a8218e2ff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_60a2052a0b434242ab3d122b7f1ae095.setIcon(icon_9ce09690e0b44006a334e00a8218e2ff);
+            
+    
+            var popup_fd8608dfae5646a5b716e1cde775f5a0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f927f3efb9164bafb59e88b08fa8e16a = $('<div id="html_f927f3efb9164bafb59e88b08fa8e16a" style="width: 100.0%; height: 100.0%;">PLEASANTON GRAVEL COMPANY P.O. Box 850 PLEASANTON CA 94566</div>')[0];
+                popup_fd8608dfae5646a5b716e1cde775f5a0.setContent(html_f927f3efb9164bafb59e88b08fa8e16a);
+            
+
+            marker_60a2052a0b434242ab3d122b7f1ae095.bindPopup(popup_fd8608dfae5646a5b716e1cde775f5a0)
+            ;
+
+            
+        
+    
+        var marker_5efe82b3b4a44e0eaa4bfea74c412964 = L.marker(
+            [37.7486049, -122.0322608],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_b3ae30c0cb604a30b2ef1c18527e7712 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5efe82b3b4a44e0eaa4bfea74c412964.setIcon(icon_b3ae30c0cb604a30b2ef1c18527e7712);
+            
+    
+            var popup_aa5be25a9da44c2197cb0ae3b955f321 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2f16630855a64f8fb045057350905d57 = $('<div id="html_2f16630855a64f8fb045057350905d57" style="width: 100.0%; height: 100.0%;">HOSANNA HOMES - INACTIVE 9990 Crow Canyon Rd CASTRO VALLEY CA 94552</div>')[0];
+                popup_aa5be25a9da44c2197cb0ae3b955f321.setContent(html_2f16630855a64f8fb045057350905d57);
+            
+
+            marker_5efe82b3b4a44e0eaa4bfea74c412964.bindPopup(popup_aa5be25a9da44c2197cb0ae3b955f321)
+            ;
+
+            
+        
+    
+        var marker_de82aa5db6dd4c86b927cf22a62437bd = L.marker(
+            [36.7546049, -121.7652696],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_70f5dd40f09b43f4a9b591eef3f38846 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_de82aa5db6dd4c86b927cf22a62437bd.setIcon(icon_70f5dd40f09b43f4a9b591eef3f38846);
+            
+    
+            var popup_d59110f42e1f4ae4ba8cf5aac86cba9c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_9c814d4e19e84af3a821b83d0f383abf = $('<div id="html_9c814d4e19e84af3a821b83d0f383abf" style="width: 100.0%; height: 100.0%;">RIVERS END MARINA Route 1, Box 22A DISCOVERY BAY CA 94505</div>')[0];
+                popup_d59110f42e1f4ae4ba8cf5aac86cba9c.setContent(html_9c814d4e19e84af3a821b83d0f383abf);
+            
+
+            marker_de82aa5db6dd4c86b927cf22a62437bd.bindPopup(popup_d59110f42e1f4ae4ba8cf5aac86cba9c)
+            ;
+
+            
+        
+    
+        var marker_1f7e1b069b47479b89dca5ed5ba2f137 = L.marker(
+            [37.6679047, -121.8857331],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_9c75b597b6474c8e8af8a79fcd1a6a3f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1f7e1b069b47479b89dca5ed5ba2f137.setIcon(icon_9c75b597b6474c8e8af8a79fcd1a6a3f);
+            
+    
+            var popup_eb2a21cf6c2d4effb27f94aa396eb638 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a293f9593d0841c18001e1ee8a07a98c = $('<div id="html_a293f9593d0841c18001e1ee8a07a98c" style="width: 100.0%; height: 100.0%;">CEMEX/ELIOT PLANT 5180 Golden Hills Parkway PLEASANTON CA 94566</div>')[0];
+                popup_eb2a21cf6c2d4effb27f94aa396eb638.setContent(html_a293f9593d0841c18001e1ee8a07a98c);
+            
+
+            marker_1f7e1b069b47479b89dca5ed5ba2f137.bindPopup(popup_eb2a21cf6c2d4effb27f94aa396eb638)
+            ;
+
+            
+        
+    
+        var marker_74c8df11d08b417d9506b8fbc850d985 = L.marker(
+            [36.5583826, -121.9099976],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_eac3f631e0fa4a56af32506a872c26df = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_74c8df11d08b417d9506b8fbc850d985.setIcon(icon_eac3f631e0fa4a56af32506a872c26df);
+            
+    
+            var popup_70312cf1d31146b7bc54e41351dcb33f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ba1ab8c1a9be4fe7a5cea75366040090 = $('<div id="html_ba1ab8c1a9be4fe7a5cea75366040090" style="width: 100.0%; height: 100.0%;">MOUNTAIN HOUSE SCHOOL 25165 FLANDERS DR. CARMEL CA 93923</div>')[0];
+                popup_70312cf1d31146b7bc54e41351dcb33f.setContent(html_ba1ab8c1a9be4fe7a5cea75366040090);
+            
+
+            marker_74c8df11d08b417d9506b8fbc850d985.bindPopup(popup_70312cf1d31146b7bc54e41351dcb33f)
+            ;
+
+            
+        
+    
+        var marker_933995e79ea94d97a142994a6251f135 = L.marker(
+            [37.6759975, -121.860091],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_71b79c1d1f51495e81b561bbbce892fa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_933995e79ea94d97a142994a6251f135.setIcon(icon_71b79c1d1f51495e81b561bbbce892fa);
+            
+    
+            var popup_7cadd9db83604ea686f16426a38bc3fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_de633c72a4244331869427df317f6058 = $('<div id="html_de633c72a4244331869427df317f6058" style="width: 100.0%; height: 100.0%;">HANSON AGGREGATE MID-PACIFIC, INC. 3000 Busch Road PLEASANTON CA 94566</div>')[0];
+                popup_7cadd9db83604ea686f16426a38bc3fe.setContent(html_de633c72a4244331869427df317f6058);
+            
+
+            marker_933995e79ea94d97a142994a6251f135.bindPopup(popup_7cadd9db83604ea686f16426a38bc3fe)
+            ;
+
+            
+        
+    
+        var marker_e58c8ba667f84e35b078443378fc12af = L.marker(
+            [37.6370418, -121.8948562],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_4832783b7136474da4bbcec0e5b036c3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e58c8ba667f84e35b078443378fc12af.setIcon(icon_4832783b7136474da4bbcec0e5b036c3);
+            
+    
+            var popup_829a7989a4924af6baf5e569e12f123d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_947fe57c564b45b3866fc655d720f582 = $('<div id="html_947fe57c564b45b3866fc655d720f582" style="width: 100.0%; height: 100.0%;">CASTLEWOOD DOMESTIC WATER SYSTEM 707 Country Club Circle PLEASANTON CA 94566</div>')[0];
+                popup_829a7989a4924af6baf5e569e12f123d.setContent(html_947fe57c564b45b3866fc655d720f582);
+            
+
+            marker_e58c8ba667f84e35b078443378fc12af.bindPopup(popup_829a7989a4924af6baf5e569e12f123d)
+            ;
+
+            
+        
+    
+        var marker_15e119792d314fa29770401c614be420 = L.marker(
+            [37.7872506, -121.5777821],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_506f973bd2e7421ab2b25128bf9b6496 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_15e119792d314fa29770401c614be420.setIcon(icon_506f973bd2e7421ab2b25128bf9b6496);
+            
+    
+            var popup_a1c2719011df4f8da6eb706ac2cd388c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dd6d3533e7fc4c118b0166549d559cb9 = $('<div id="html_dd6d3533e7fc4c118b0166549d559cb9" style="width: 100.0%; height: 100.0%;">MOUNTAIN HOUSE SCHOOL 3950 Mountain House Road BYRON CA 94514</div>')[0];
+                popup_a1c2719011df4f8da6eb706ac2cd388c.setContent(html_dd6d3533e7fc4c118b0166549d559cb9);
+            
+
+            marker_15e119792d314fa29770401c614be420.bindPopup(popup_a1c2719011df4f8da6eb706ac2cd388c)
+            ;
+
+            
+        
+    
+        var marker_49370082b8ca4797a34fb8b71682055b = L.marker(
+            [37.5715434, -121.6877092],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_a53a1e9a96234cd39d979ce4b22e8a6c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_49370082b8ca4797a34fb8b71682055b.setIcon(icon_a53a1e9a96234cd39d979ce4b22e8a6c);
+            
+    
+            var popup_8ddec22a1be3400fbe00b191b5b5874b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3bde32acea194e34ac18ccb435a1149c = $('<div id="html_3bde32acea194e34ac18ccb435a1149c" style="width: 100.0%; height: 100.0%;">EBRPD - DEL VALLE REGIONAL PARK 7000 Del Valle Road LIVERMORE CA 94605</div>')[0];
+                popup_8ddec22a1be3400fbe00b191b5b5874b.setContent(html_3bde32acea194e34ac18ccb435a1149c);
+            
+
+            marker_49370082b8ca4797a34fb8b71682055b.bindPopup(popup_8ddec22a1be3400fbe00b191b5b5874b)
+            ;
+
+            
+        
+    
+        var marker_ace6c30acb87477391c214d122477f0c = L.marker(
+            [37.672371, -121.839577],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_9b72db293c1e48c7beaa439fd78c14d4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ace6c30acb87477391c214d122477f0c.setIcon(icon_9b72db293c1e48c7beaa439fd78c14d4);
+            
+    
+            var popup_f1a2c7c0561243278905518e58995086 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3b22d9adcc324475a737cbc3b0a5e4a0 = $('<div id="html_3b22d9adcc324475a737cbc3b0a5e4a0" style="width: 100.0%; height: 100.0%;">EBRPD - SHADOW CLIFFS REGIONAL PARK Stanley Blvd. PLEASANTON CA 94566</div>')[0];
+                popup_f1a2c7c0561243278905518e58995086.setContent(html_3b22d9adcc324475a737cbc3b0a5e4a0);
+            
+
+            marker_ace6c30acb87477391c214d122477f0c.bindPopup(popup_f1a2c7c0561243278905518e58995086)
+            ;
+
+            
+        
+    
+        var marker_6b69ecfdf41047b689da6fc9ed853d93 = L.marker(
+            [37.6436199, -121.8676464],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_7300ae75c9b14eaaa0ec6ef76a5f8e1b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6b69ecfdf41047b689da6fc9ed853d93.setIcon(icon_7300ae75c9b14eaaa0ec6ef76a5f8e1b);
+            
+    
+            var popup_6ba1b67a21824cd4a4bba75c35a6d27a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b65f45999d1043248a15fc916fdefdf6 = $('<div id="html_b65f45999d1043248a15fc916fdefdf6" style="width: 100.0%; height: 100.0%;">EBRPD - SUNOL REGIONAL WILDERNESS nan PLEASANTON CA 94566</div>')[0];
+                popup_6ba1b67a21824cd4a4bba75c35a6d27a.setContent(html_b65f45999d1043248a15fc916fdefdf6);
+            
+
+            marker_6b69ecfdf41047b689da6fc9ed853d93.bindPopup(popup_6ba1b67a21824cd4a4bba75c35a6d27a)
+            ;
+
+            
+        
+    
+        var marker_551accd3fda449d7b0294cf0ad694dae = L.marker(
+            [37.7748282, -122.1222512],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_b29582ee14ba472daba5ce63ad9de1d3 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_551accd3fda449d7b0294cf0ad694dae.setIcon(icon_b29582ee14ba472daba5ce63ad9de1d3);
+            
+    
+            var popup_81322c9b788846fabeb2b01b8f56d324 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_57684df1d1734f308660c60b9d7e5e04 = $('<div id="html_57684df1d1734f308660c60b9d7e5e04" style="width: 100.0%; height: 100.0%;">EBRPD - REDWOOD SPRING REGIONAL PARK Redwood Road OAKLAND CA 94605</div>')[0];
+                popup_81322c9b788846fabeb2b01b8f56d324.setContent(html_57684df1d1734f308660c60b9d7e5e04);
+            
+
+            marker_551accd3fda449d7b0294cf0ad694dae.bindPopup(popup_81322c9b788846fabeb2b01b8f56d324)
+            ;
+
+            
+        
+    
+        var marker_aae48f248daf4aedaeb7cb765ddacf01 = L.marker(
+            [37.6267411, -122.0428876],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_3c096882fe844d3cbef4c51c3eec00a8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_aae48f248daf4aedaeb7cb765ddacf01.setIcon(icon_3c096882fe844d3cbef4c51c3eec00a8);
+            
+    
+            var popup_aecb4856178a4b99bfae96cf7722e09c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2e77f4095a2f44dc87b8a1626aa4406a = $('<div id="html_2e77f4095a2f44dc87b8a1626aa4406a" style="width: 100.0%; height: 100.0%;">EBRPD - GARIN REGIONAL PARK End of Garin Road HAYWARD CA 94544</div>')[0];
+                popup_aecb4856178a4b99bfae96cf7722e09c.setContent(html_2e77f4095a2f44dc87b8a1626aa4406a);
+            
+
+            marker_aae48f248daf4aedaeb7cb765ddacf01.bindPopup(popup_aecb4856178a4b99bfae96cf7722e09c)
+            ;
+
+            
+        
+    
+        var marker_bf0c634eab9e4b0991a50af4c74d1a16 = L.marker(
+            [37.7554905, -122.1462193],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_256030e72478478ea43faac3dfe4caa7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bf0c634eab9e4b0991a50af4c74d1a16.setIcon(icon_256030e72478478ea43faac3dfe4caa7);
+            
+    
+            var popup_f28eb297c7234735a5a79d082fe657b3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6b6c9faf1c5d43fbbac98b761338387b = $('<div id="html_6b6c9faf1c5d43fbbac98b761338387b" style="width: 100.0%; height: 100.0%;">EBRPD - MISSION PEAK REGIONAL PRESERVE P.O. Box 5381 OAKLAND CA 94605</div>')[0];
+                popup_f28eb297c7234735a5a79d082fe657b3.setContent(html_6b6c9faf1c5d43fbbac98b761338387b);
+            
+
+            marker_bf0c634eab9e4b0991a50af4c74d1a16.bindPopup(popup_f28eb297c7234735a5a79d082fe657b3)
+            ;
+
+            
+        
+    
+        var marker_730f672da2a944b29e990f3c214c0c87 = L.marker(
+            [37.7070179, -121.408607],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_6964470e377d40db914aa8a5f6db4dee = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_730f672da2a944b29e990f3c214c0c87.setIcon(icon_6964470e377d40db914aa8a5f6db4dee);
+            
+    
+            var popup_f9f207c724764d2ba3618126f42754c2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_640112b89eb0476bb3f9ed32eecb2937 = $('<div id="html_640112b89eb0476bb3f9ed32eecb2937" style="width: 100.0%; height: 100.0%;">MOUNTAIN HOUSE BAR 8351 Rinuaro Court TRACY CA 95391</div>')[0];
+                popup_f9f207c724764d2ba3618126f42754c2.setContent(html_640112b89eb0476bb3f9ed32eecb2937);
+            
+
+            marker_730f672da2a944b29e990f3c214c0c87.bindPopup(popup_f9f207c724764d2ba3618126f42754c2)
+            ;
+
+            
+        
+    
+        var marker_44eb01adcc3b46cebced70efab246237 = L.marker(
+            [37.7582175, -121.51528],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_53a28f94c4d84c3baa2128890a8c5556 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_44eb01adcc3b46cebced70efab246237.setIcon(icon_53a28f94c4d84c3baa2128890a8c5556);
+            
+    
+            var popup_a051616e843145a49ada2892cee0986c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_858b26b8b41440ecaac97dfdb3e4b862 = $('<div id="html_858b26b8b41440ecaac97dfdb3e4b862" style="width: 100.0%; height: 100.0%;">RANCHO LOS MOCHOS-BSA CAMP 16784 W GRANT LINE RD TRACY CA 95391</div>')[0];
+                popup_a051616e843145a49ada2892cee0986c.setContent(html_858b26b8b41440ecaac97dfdb3e4b862);
+            
+
+            marker_44eb01adcc3b46cebced70efab246237.bindPopup(popup_a051616e843145a49ada2892cee0986c)
+            ;
+
+            
+        
+    
+        var marker_81ab1ea15fc74905aadd0bda0ce99fe8 = L.marker(
+            [37.6676778, -121.6766306],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_d030a016ce9e4b3dad73a44cea82b504 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_81ab1ea15fc74905aadd0bda0ce99fe8.setIcon(icon_d030a016ce9e4b3dad73a44cea82b504);
+            
+    
+            var popup_5eeb0282641443b9ad4ac2f5f0697f07 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_507d3f772f9e469d81c4f607e6f9122a = $('<div id="html_507d3f772f9e469d81c4f607e6f9122a" style="width: 100.0%; height: 100.0%;">PURPLE ORCHID RESORT SPA 4549 Cross Rd Livermore CA 94550</div>')[0];
+                popup_5eeb0282641443b9ad4ac2f5f0697f07.setContent(html_507d3f772f9e469d81c4f607e6f9122a);
+            
+
+            marker_81ab1ea15fc74905aadd0bda0ce99fe8.bindPopup(popup_5eeb0282641443b9ad4ac2f5f0697f07)
+            ;
+
+            
+        
+    
+        var marker_9dde4ea3c3654435b1c6ca2f076ee2c3 = L.marker(
+            [37.6599327, -121.8820906],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_fdcd504ac250495dbbc314ebaac3b01a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9dde4ea3c3654435b1c6ca2f076ee2c3.setIcon(icon_fdcd504ac250495dbbc314ebaac3b01a);
+            
+    
+            var popup_e822b5919525400b83d8a3277a6505bd = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_01752d45d89845ce8a06ab9a4bc52166 = $('<div id="html_01752d45d89845ce8a06ab9a4bc52166" style="width: 100.0%; height: 100.0%;">ALAMEDA COUNTY FAIRGROUNDS 4501 Pleasanton Ave PLEASANTON CA 94566</div>')[0];
+                popup_e822b5919525400b83d8a3277a6505bd.setContent(html_01752d45d89845ce8a06ab9a4bc52166);
+            
+
+            marker_9dde4ea3c3654435b1c6ca2f076ee2c3.bindPopup(popup_e822b5919525400b83d8a3277a6505bd)
+            ;
+
+            
+        
+    
+        var marker_be195f950c42469ebb9de72cd694c15f = L.marker(
+            [37.748607, -121.600506],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_75d071953b774d2b9acfa89d5fe58af8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_be195f950c42469ebb9de72cd694c15f.setIcon(icon_75d071953b774d2b9acfa89d5fe58af8);
+            
+    
+            var popup_dbca636f7aa4487db56def785fb2107b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0f9917a3359d43609243b2728d284f45 = $('<div id="html_0f9917a3359d43609243b2728d284f45" style="width: 100.0%; height: 100.0%;">MOUNTAIN HOUSE GOLF COURSE 15000 Altamont Pass Rd MOUNTAIN HOUSE CA 95391</div>')[0];
+                popup_dbca636f7aa4487db56def785fb2107b.setContent(html_0f9917a3359d43609243b2728d284f45);
+            
+
+            marker_be195f950c42469ebb9de72cd694c15f.bindPopup(popup_dbca636f7aa4487db56def785fb2107b)
+            ;
+
+            
+        
+    
+        var marker_3252d04d4039456cb6958d59e7280a50 = L.marker(
+            [37.55, -121.97],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_ff93567775134dc7b490531cad04488c = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3252d04d4039456cb6958d59e7280a50.setIcon(icon_ff93567775134dc7b490531cad04488c);
+            
+    
+            var popup_b9d88e0612c74fdbbc0ce784eae4ba3b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c5227d0bcf64f6b81543c1543bebad2 = $('<div id="html_6c5227d0bcf64f6b81543c1543bebad2" style="width: 100.0%; height: 100.0%;">ALAMEDA COUNTY WATER DISTRICT P.O. Box 5110 FREMONT CA 94537</div>')[0];
+                popup_b9d88e0612c74fdbbc0ce784eae4ba3b.setContent(html_6c5227d0bcf64f6b81543c1543bebad2);
+            
+
+            marker_3252d04d4039456cb6958d59e7280a50.bindPopup(popup_b9d88e0612c74fdbbc0ce784eae4ba3b)
+            ;
+
+            
+        
+    
+        var marker_3e6a0ecb6f5e4717803fae506f8552c5 = L.marker(
+            [37.6795223, -121.7736601],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_84330fc77c92401fb0e45aac46c66ba9 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3e6a0ecb6f5e4717803fae506f8552c5.setIcon(icon_84330fc77c92401fb0e45aac46c66ba9);
+            
+    
+            var popup_4dde21c851d048acb89e629431f04f43 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_239a561ae023402e8d36b96a3b152cc1 = $('<div id="html_239a561ae023402e8d36b96a3b152cc1" style="width: 100.0%; height: 100.0%;">CALIFORNIA WATER SERVICE - LIVERMORE 195 South N Street LIVERMORE CA 94550</div>')[0];
+                popup_4dde21c851d048acb89e629431f04f43.setContent(html_239a561ae023402e8d36b96a3b152cc1);
+            
+
+            marker_3e6a0ecb6f5e4717803fae506f8552c5.bindPopup(popup_4dde21c851d048acb89e629431f04f43)
+            ;
+
+            
+        
+    
+        var marker_51b2fe5f98d946f1a09ecf47e2ab4518 = L.marker(
+            [37.8013164, -122.2708386],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_420c8e73128943f1b882dcad7b25479f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_51b2fe5f98d946f1a09ecf47e2ab4518.setIcon(icon_420c8e73128943f1b882dcad7b25479f);
+            
+    
+            var popup_7cc1f9d56a9041718ead82805cd92b6c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e4164976cd94d0692d40faf9b31e9b7 = $('<div id="html_4e4164976cd94d0692d40faf9b31e9b7" style="width: 100.0%; height: 100.0%;">EAST BAY MUD 375 Eleventh Street OAKLAND CA 94607</div>')[0];
+                popup_7cc1f9d56a9041718ead82805cd92b6c.setContent(html_4e4164976cd94d0692d40faf9b31e9b7);
+            
+
+            marker_51b2fe5f98d946f1a09ecf47e2ab4518.bindPopup(popup_7cc1f9d56a9041718ead82805cd92b6c)
+            ;
+
+            
+        
+    
+        var marker_32e2ac5485ba497ba026cd6f8a779fea = L.marker(
+            [37.6709785, -122.0856974],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_2aeb4caad317498ab22b3dcccf789aac = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_32e2ac5485ba497ba026cd6f8a779fea.setIcon(icon_2aeb4caad317498ab22b3dcccf789aac);
+            
+    
+            var popup_98fd304155a7464bafc02e258b7650ba = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_93a78f4c70ab42b8ac67d2103ca3abd4 = $('<div id="html_93a78f4c70ab42b8ac67d2103ca3abd4" style="width: 100.0%; height: 100.0%;">CITY OF HAYWARD 777 B Street HAYWARD CA 94541</div>')[0];
+                popup_98fd304155a7464bafc02e258b7650ba.setContent(html_93a78f4c70ab42b8ac67d2103ca3abd4);
+            
+
+            marker_32e2ac5485ba497ba026cd6f8a779fea.bindPopup(popup_98fd304155a7464bafc02e258b7650ba)
+            ;
+
+            
+        
+    
+        var marker_133e5b4886814efea009b62da5d179e4 = L.marker(
+            [37.6773208, -121.8589525],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_b036090e34a04a3f96102d79aee09672 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_133e5b4886814efea009b62da5d179e4.setIcon(icon_b036090e34a04a3f96102d79aee09672);
+            
+    
+            var popup_8138d9ad39574d139863e3697d8cb953 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4bca458ae4a74aa88273657becef4fa8 = $('<div id="html_4bca458ae4a74aa88273657becef4fa8" style="width: 100.0%; height: 100.0%;">CITY OF PLEASANTON 3333 Busch Road PLEASANTON CA 94566</div>')[0];
+                popup_8138d9ad39574d139863e3697d8cb953.setContent(html_4bca458ae4a74aa88273657becef4fa8);
+            
+
+            marker_133e5b4886814efea009b62da5d179e4.bindPopup(popup_8138d9ad39574d139863e3697d8cb953)
+            ;
+
+            
+        
+    
+        var marker_528f11486cdc4577801aca387c1da29b = L.marker(
+            [37.7061902, -121.9213997],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_3ab93d82c2504cf689d397d6f1fc49d7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_528f11486cdc4577801aca387c1da29b.setIcon(icon_3ab93d82c2504cf689d397d6f1fc49d7);
+            
+    
+            var popup_9a1231d090d24550878b9bd3383a77ca = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f5b287e925d24c8689848ac460ba25c6 = $('<div id="html_f5b287e925d24c8689848ac460ba25c6" style="width: 100.0%; height: 100.0%;">DUBLIN SAN RAMON SERVICES DISTRICT 7051 Dublin Blvd. DUBLIN CA 94568</div>')[0];
+                popup_9a1231d090d24550878b9bd3383a77ca.setContent(html_f5b287e925d24c8689848ac460ba25c6);
+            
+
+            marker_528f11486cdc4577801aca387c1da29b.bindPopup(popup_9a1231d090d24550878b9bd3383a77ca)
+            ;
+
+            
+        
+    
+        var marker_57142dee63e14d99b6af386b662edca6 = L.marker(
+            [37.7054288, -121.8072818],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_3b8c9c5940d542beb1241871dfc78349 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_57142dee63e14d99b6af386b662edca6.setIcon(icon_3b8c9c5940d542beb1241871dfc78349);
+            
+    
+            var popup_66123f37ad6d472fb67d016082ed7be0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_93ec40ced3f249fc85106b537bebb4f3 = $('<div id="html_93ec40ced3f249fc85106b537bebb4f3" style="width: 100.0%; height: 100.0%;">ZONE 7 WATER AGENCY 100 N Canyon Pkwy LIVERMORE CA 94551</div>')[0];
+                popup_66123f37ad6d472fb67d016082ed7be0.setContent(html_93ec40ced3f249fc85106b537bebb4f3);
+            
+
+            marker_57142dee63e14d99b6af386b662edca6.bindPopup(popup_66123f37ad6d472fb67d016082ed7be0)
+            ;
+
+            
+        
+    
+        var marker_bd3dea80fe9644e9970a1ffb0e103661 = L.marker(
+            [37.6912091, -121.8075066],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_d43d0fe5bfd54629b9c38b083fba32a0 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bd3dea80fe9644e9970a1ffb0e103661.setIcon(icon_d43d0fe5bfd54629b9c38b083fba32a0);
+            
+    
+            var popup_b3a17059e39843aebee86075e0053fb1 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6063d357732647f4a77c51221397e73a = $('<div id="html_6063d357732647f4a77c51221397e73a" style="width: 100.0%; height: 100.0%;">CITY OF LIVERMORE Water Resources Division LIVERMORE CA 94551</div>')[0];
+                popup_b3a17059e39843aebee86075e0053fb1.setContent(html_6063d357732647f4a77c51221397e73a);
+            
+
+            marker_bd3dea80fe9644e9970a1ffb0e103661.bindPopup(popup_b3a17059e39843aebee86075e0053fb1)
+            ;
+
+            
+        
+    
+        var marker_37da8cefd7894fbeb2a715c417c4cfe6 = L.marker(
+            [37.5909795, -121.883778],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_76b6af00a0774261a4dab32d8c0a2144 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_37da8cefd7894fbeb2a715c417c4cfe6.setIcon(icon_76b6af00a0774261a4dab32d8c0a2144);
+            
+    
+            var popup_a9b5e631974f46c18dc7247bad698a0a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5d720ea6e37a4e2ca088255d788e198e = $('<div id="html_5d720ea6e37a4e2ca088255d788e198e" style="width: 100.0%; height: 100.0%;">TOWN OF SUNOL-SFPUC SF Public Utilities Commission SUNOL CA 94586</div>')[0];
+                popup_a9b5e631974f46c18dc7247bad698a0a.setContent(html_5d720ea6e37a4e2ca088255d788e198e);
+            
+
+            marker_37da8cefd7894fbeb2a715c417c4cfe6.bindPopup(popup_a9b5e631974f46c18dc7247bad698a0a)
+            ;
+
+            
+        
+    
+        var marker_44ed7a6b2e094199a009bcfe8f0334c7 = L.marker(
+            [37.6818745, -121.7680088],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_ad1369d4217a4d4986cc8e62627b7128 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_44ed7a6b2e094199a009bcfe8f0334c7.setIcon(icon_ad1369d4217a4d4986cc8e62627b7128);
+            
+    
+            var popup_609b2fb5decf45b18bba8839eb4c2738 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4d16ad6a009f4f268d6eb97fbefb76c6 = $('<div id="html_4d16ad6a009f4f268d6eb97fbefb76c6" style="width: 100.0%; height: 100.0%;">STIVERS ACADEMY Mr. Jack Stivers LIVERMORE CA 94550</div>')[0];
+                popup_609b2fb5decf45b18bba8839eb4c2738.setContent(html_4d16ad6a009f4f268d6eb97fbefb76c6);
+            
+
+            marker_44ed7a6b2e094199a009bcfe8f0334c7.bindPopup(popup_609b2fb5decf45b18bba8839eb4c2738)
+            ;
+
+            
+        
+    
+        var marker_a3b94476ac2e4d319959e82cdf9d4877 = L.marker(
+            [37.6436199, -121.8676464],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_6ae7270994da4a82a320bc71c97481c7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a3b94476ac2e4d319959e82cdf9d4877.setIcon(icon_6ae7270994da4a82a320bc71c97481c7);
+            
+    
+            var popup_0f7bd0612b2b4b3c8ff30230676f315d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_70e7e0b3fd694ccf813a3a15ea48c08f = $('<div id="html_70e7e0b3fd694ccf813a3a15ea48c08f" style="width: 100.0%; height: 100.0%;">VILLA TASSAJARA Mr. Rod Scott PLEASANTON CA 94566</div>')[0];
+                popup_0f7bd0612b2b4b3c8ff30230676f315d.setContent(html_70e7e0b3fd694ccf813a3a15ea48c08f);
+            
+
+            marker_a3b94476ac2e4d319959e82cdf9d4877.bindPopup(popup_0f7bd0612b2b4b3c8ff30230676f315d)
+            ;
+
+            
+        
+    
+        var marker_48cd6e06239a4dc2b21fb56383146c94 = L.marker(
+            [37.9290213, -122.0282502],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_a30d07f8108c422d8957e52969c352d4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_48cd6e06239a4dc2b21fb56383146c94.setIcon(icon_a30d07f8108c422d8957e52969c352d4);
+            
+    
+            var popup_150b24463dcc497f8c8adc07a07a4815 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ad55badb0d9d415a9558622b008935e0 = $('<div id="html_ad55badb0d9d415a9558622b008935e0" style="width: 100.0%; height: 100.0%;">PG&E - BETHANY COMPRESSOR STATION 375 North Wiget Lane, Suite 20 WALNUT CREEK CA 94598</div>')[0];
+                popup_150b24463dcc497f8c8adc07a07a4815.setContent(html_ad55badb0d9d415a9558622b008935e0);
+            
+
+            marker_48cd6e06239a4dc2b21fb56383146c94.bindPopup(popup_150b24463dcc497f8c8adc07a07a4815)
+            ;
+
+            
+        
+    
+        var marker_c21cc96189ae460abda23dd0cb46ec8b = L.marker(
+            [37.78605820000001, -122.3181623],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_efaf1c28071f4aacb843c0bd3bc7389d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c21cc96189ae460abda23dd0cb46ec8b.setIcon(icon_efaf1c28071f4aacb843c0bd3bc7389d);
+            
+    
+            var popup_85922891659d4fe48c9a5e1bb2869c85 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d6a131240e9d45f39ac7bb1f3e76aeba = $('<div id="html_d6a131240e9d45f39ac7bb1f3e76aeba" style="width: 100.0%; height: 100.0%;">ALAMEDA POINT Alameda Point ALAMEDA CA 94501</div>')[0];
+                popup_85922891659d4fe48c9a5e1bb2869c85.setContent(html_d6a131240e9d45f39ac7bb1f3e76aeba);
+            
+
+            marker_c21cc96189ae460abda23dd0cb46ec8b.bindPopup(popup_85922891659d4fe48c9a5e1bb2869c85)
+            ;
+
+            
+        
+    
+        var marker_20c4a20e888547b4ae2a0c8576251d8f = L.marker(
+            [37.5766348, -121.9719035],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_94cbd6972cfb48c9910aa6982c70438a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_20c4a20e888547b4ae2a0c8576251d8f.setIcon(icon_94cbd6972cfb48c9910aa6982c70438a);
+            
+    
+            var popup_98d333fa4be1410b9ade6f58a961aebf = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_977d21b7d9af44e89510e83b27e2a806 = $('<div id="html_977d21b7d9af44e89510e83b27e2a806" style="width: 100.0%; height: 100.0%;">BELVOIR SPRINGS Mission Blvd. FREMONT CA 94536</div>')[0];
+                popup_98d333fa4be1410b9ade6f58a961aebf.setContent(html_977d21b7d9af44e89510e83b27e2a806);
+            
+
+            marker_20c4a20e888547b4ae2a0c8576251d8f.bindPopup(popup_98d333fa4be1410b9ade6f58a961aebf)
+            ;
+
+            
+        
+    
+        var marker_4a8db40dcf8a4ae690dc874070de7017 = L.marker(
+            [37.6624312, -121.8746789],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_625948d292de4d3694f21f023a8cf2ea = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4a8db40dcf8a4ae690dc874070de7017.setIcon(icon_625948d292de4d3694f21f023a8cf2ea);
+            
+    
+            var popup_5ca699ea41b34313be005d6aac28040f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_8dc4d60d80c745b1a2a6451192985ce1 = $('<div id="html_8dc4d60d80c745b1a2a6451192985ce1" style="width: 100.0%; height: 100.0%;">SFPUC-PLEASANTON WELLS nan PLEASANTON CA 95555</div>')[0];
+                popup_5ca699ea41b34313be005d6aac28040f.setContent(html_8dc4d60d80c745b1a2a6451192985ce1);
+            
+
+            marker_4a8db40dcf8a4ae690dc874070de7017.bindPopup(popup_5ca699ea41b34313be005d6aac28040f)
+            ;
+
+            
+        
+    
+        var marker_7b2456bf61054162af3231b7580fc0e7 = L.marker(
+            [37.5957167, -121.953671],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_e13c1ce8f50a4473b4447bb959cfba1f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7b2456bf61054162af3231b7580fc0e7.setIcon(icon_e13c1ce8f50a4473b4447bb959cfba1f);
+            
+    
+            var popup_f2925e4f39664baaa1224116e999025c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fa0f4286907446a09c1e019b2ce57102 = $('<div id="html_fa0f4286907446a09c1e019b2ce57102" style="width: 100.0%; height: 100.0%;">GOLDEN GATE CHURCH 2950 Niles Canyon Road FREEMONT CA 94536</div>')[0];
+                popup_f2925e4f39664baaa1224116e999025c.setContent(html_fa0f4286907446a09c1e019b2ce57102);
+            
+
+            marker_7b2456bf61054162af3231b7580fc0e7.bindPopup(popup_f2925e4f39664baaa1224116e999025c)
+            ;
+
+            
+        
+    
+        var marker_119ec455d304475aab7094bdbc9ceaa1 = L.marker(
+            [37.6575749, -121.8056515],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_c880357b8ab940beae4234a8a59b0aff = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_119ec455d304475aab7094bdbc9ceaa1.setIcon(icon_c880357b8ab940beae4234a8a59b0aff);
+            
+    
+            var popup_6a69a6bd6daf4a73bab765552460db34 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_845261774a6a4f6d8a832ff755760691 = $('<div id="html_845261774a6a4f6d8a832ff755760691" style="width: 100.0%; height: 100.0%;">UTILITY VAULT 1901 Isabel Ave LIVERMORE CA 94550</div>')[0];
+                popup_6a69a6bd6daf4a73bab765552460db34.setContent(html_845261774a6a4f6d8a832ff755760691);
+            
+
+            marker_119ec455d304475aab7094bdbc9ceaa1.bindPopup(popup_6a69a6bd6daf4a73bab765552460db34)
+            ;
+
+            
+        
+    
+        var marker_c2edf94b045e4bb99b4fd01537c62279 = L.marker(
+            [37.7948092, -121.5862265],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_96c19abcb39342faac8e886900f8bbcd = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c2edf94b045e4bb99b4fd01537c62279.setIcon(icon_96c19abcb39342faac8e886900f8bbcd);
+            
+    
+            var popup_5ce2ccbb072c4b8fa77de4fbd4cf5953 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_481f827214a745489f41d8dac310371c = $('<div id="html_481f827214a745489f41d8dac310371c" style="width: 100.0%; height: 100.0%;">USBR-SLDMWA - CVP JONES PUMPING PLANT 15990 Kelso Road BYRON CA 94514</div>')[0];
+                popup_5ce2ccbb072c4b8fa77de4fbd4cf5953.setContent(html_481f827214a745489f41d8dac310371c);
+            
+
+            marker_c2edf94b045e4bb99b4fd01537c62279.bindPopup(popup_5ce2ccbb072c4b8fa77de4fbd4cf5953)
+            ;
+
+            
+        
+    
+        var marker_c93cf9b047894088b787d035adb5d141 = L.marker(
+            [37.7021521, -121.9357918],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_8534505350a94926ab200c68853349ef = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c93cf9b047894088b787d035adb5d141.setIcon(icon_8534505350a94926ab200c68853349ef);
+            
+    
+            var popup_cce097cd176944fab9a710ae9dbb339c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c376b72327d64f228d3f4f0a9d78785f = $('<div id="html_c376b72327d64f228d3f4f0a9d78785f" style="width: 100.0%; height: 100.0%;">PARKS RFTA HQ Command - Bldg. 270 DUBLIN CA 94568</div>')[0];
+                popup_cce097cd176944fab9a710ae9dbb339c.setContent(html_c376b72327d64f228d3f4f0a9d78785f);
+            
+
+            marker_c93cf9b047894088b787d035adb5d141.bindPopup(popup_cce097cd176944fab9a710ae9dbb339c)
+            ;
+
+            
+        
+    
+        var marker_46af298804b84342aeb845ebca04213f = L.marker(
+            [37.7061959, -121.9213972],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_74f1a9cb93cb4b9faebebd4cd1067c07 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_46af298804b84342aeb845ebca04213f.setIcon(icon_74f1a9cb93cb4b9faebebd4cd1067c07);
+            
+    
+            var popup_8ab3fe76ccfd483989b885b948c6e21f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_dc4d2ef514264aa1bc60157bee7a0286 = $('<div id="html_dc4d2ef514264aa1bc60157bee7a0286" style="width: 100.0%; height: 100.0%;">Dublin San Ramon Services District Dublin San Ramon Services Dist Dublin CA 94568</div>')[0];
+                popup_8ab3fe76ccfd483989b885b948c6e21f.setContent(html_dc4d2ef514264aa1bc60157bee7a0286);
+            
+
+            marker_46af298804b84342aeb845ebca04213f.bindPopup(popup_8ab3fe76ccfd483989b885b948c6e21f)
+            ;
+
+            
+        
+    
+        var marker_b7ec8265e73840bc84cb4f98d2fb4c77 = L.marker(
+            [37.6912091, -121.8075066],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_b2508dd8fd2641e39a13d3ace96989d1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_b7ec8265e73840bc84cb4f98d2fb4c77.setIcon(icon_b2508dd8fd2641e39a13d3ace96989d1);
+            
+    
+            var popup_043a57cbf39c40dbb9f06607b1eefb6a = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b5e12479519a4726b1ed6c25a7e96bd2 = $('<div id="html_b5e12479519a4726b1ed6c25a7e96bd2" style="width: 100.0%; height: 100.0%;">City of Livermore City of Livermore Water Resour Livermore CA 94550</div>')[0];
+                popup_043a57cbf39c40dbb9f06607b1eefb6a.setContent(html_b5e12479519a4726b1ed6c25a7e96bd2);
+            
+
+            marker_b7ec8265e73840bc84cb4f98d2fb4c77.bindPopup(popup_043a57cbf39c40dbb9f06607b1eefb6a)
+            ;
+
+            
+        
+    
+        var marker_af41acf31234448ebd59c5e1dccbe41f = L.marker(
+            [37.8013164, -122.2708386],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_e9bc4eb1b7a1435994c3bc3bcb2b0fb4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_af41acf31234448ebd59c5e1dccbe41f.setIcon(icon_e9bc4eb1b7a1435994c3bc3bcb2b0fb4);
+            
+    
+            var popup_aa7e7d2ec3a14f13a268aa9f6a64a36d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_66e750d63fa64bb38e4988d9055c4115 = $('<div id="html_66e750d63fa64bb38e4988d9055c4115" style="width: 100.0%; height: 100.0%;">EBMUD ENAQUA UV 375 ELEVENTH STREET OAKLAND CA 94607</div>')[0];
+                popup_aa7e7d2ec3a14f13a268aa9f6a64a36d.setContent(html_66e750d63fa64bb38e4988d9055c4115);
+            
+
+            marker_af41acf31234448ebd59c5e1dccbe41f.bindPopup(popup_aa7e7d2ec3a14f13a268aa9f6a64a36d)
+            ;
+
+            
+        
+    
+        var marker_bc19e472cf784acd97e8c1a62fd79f09 = L.marker(
+            [37.8013825, -122.2708183],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_7eb1e5054cc4437da29d2be0d792172e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bc19e472cf784acd97e8c1a62fd79f09.setIcon(icon_7eb1e5054cc4437da29d2be0d792172e);
+            
+    
+            var popup_dde22b8e6b0f428897bbbb957e9fcd26 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_799bfc1922c74b5191f8754227c081ef = $('<div id="html_799bfc1922c74b5191f8754227c081ef" style="width: 100.0%; height: 100.0%;">East Bay Municipal Utility District PO Box 24055 Oakland CA 94623</div>')[0];
+                popup_dde22b8e6b0f428897bbbb957e9fcd26.setContent(html_799bfc1922c74b5191f8754227c081ef);
+            
+
+            marker_bc19e472cf784acd97e8c1a62fd79f09.bindPopup(popup_dde22b8e6b0f428897bbbb957e9fcd26)
+            ;
+
+            
+        
+    
+        var marker_4979672ebf3d4208a5d36f8c7c5440e6 = L.marker(
+            [37.8013825, -122.2708183],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_36ad9473ddca40949c6f99780f9aeeca = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4979672ebf3d4208a5d36f8c7c5440e6.setIcon(icon_36ad9473ddca40949c6f99780f9aeeca);
+            
+    
+            var popup_ada5efea61c548108e83f8912ebb4164 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a347ce1ed74543c293495aba05d8eed2 = $('<div id="html_a347ce1ed74543c293495aba05d8eed2" style="width: 100.0%; height: 100.0%;">EBMUD - E Bayshore Recycled Water EBMUD Office of Water Recyclin Oakland CA 94623</div>')[0];
+                popup_ada5efea61c548108e83f8912ebb4164.setContent(html_a347ce1ed74543c293495aba05d8eed2);
+            
+
+            marker_4979672ebf3d4208a5d36f8c7c5440e6.bindPopup(popup_ada5efea61c548108e83f8912ebb4164)
+            ;
+
+            
+        
+    
+        var marker_e13f894e20274c20b1d8602b35422b37 = L.marker(
+            [37.6709785, -122.0856974],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_e8a7bf02caee431ba14bc80dd0bb7459 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e13f894e20274c20b1d8602b35422b37.setIcon(icon_e8a7bf02caee431ba14bc80dd0bb7459);
+            
+    
+            var popup_b8b5880ad5e14487819bdd68dfe52a65 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e352252213514a4c85f4aa339c678bcf = $('<div id="html_e352252213514a4c85f4aa339c678bcf" style="width: 100.0%; height: 100.0%;">City of Hayward 777 B Street Hayward, Ca 94541-5007 CA 94623</div>')[0];
+                popup_b8b5880ad5e14487819bdd68dfe52a65.setContent(html_e352252213514a4c85f4aa339c678bcf);
+            
+
+            marker_e13f894e20274c20b1d8602b35422b37.bindPopup(popup_b8b5880ad5e14487819bdd68dfe52a65)
+            ;
+
+            
+        
+    
+        var marker_ff51c54eeca44090b3f3942b865a5f2a = L.marker(
+            [37.7061902, -121.9213997],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_977f23caf65c4ba4a45f386a25b31336 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ff51c54eeca44090b3f3942b865a5f2a.setIcon(icon_977f23caf65c4ba4a45f386a25b31336);
+            
+    
+            var popup_ac6ab673bbc749c0a0032ee7f9d87f9d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_48c2861d450a40df8437a2f19d483158 = $('<div id="html_48c2861d450a40df8437a2f19d483158" style="width: 100.0%; height: 100.0%;">DERWA 7051 Dublin Blvd Dublin, CA 94568 CA 94568</div>')[0];
+                popup_ac6ab673bbc749c0a0032ee7f9d87f9d.setContent(html_48c2861d450a40df8437a2f19d483158);
+            
+
+            marker_ff51c54eeca44090b3f3942b865a5f2a.bindPopup(popup_ac6ab673bbc749c0a0032ee7f9d87f9d)
+            ;
+
+            
+        
+    
+        var marker_d87d780ae77744c091c3215eeb7a81b0 = L.marker(
+            [37.7286649, -122.1593992],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_3f3717b9d57a40c59593155a78df4083 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d87d780ae77744c091c3215eeb7a81b0.setIcon(icon_3f3717b9d57a40c59593155a78df4083);
+            
+    
+            var popup_939109bb33264f5981951276661258e4 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a0df4cdf62334e33b2ee5520c34d02f8 = $('<div id="html_a0df4cdf62334e33b2ee5520c34d02f8" style="width: 100.0%; height: 100.0%;">City of San Leandro Engineering and Transportation Dept San Leandro CA 94577</div>')[0];
+                popup_939109bb33264f5981951276661258e4.setContent(html_a0df4cdf62334e33b2ee5520c34d02f8);
+            
+
+            marker_d87d780ae77744c091c3215eeb7a81b0.bindPopup(popup_939109bb33264f5981951276661258e4)
+            ;
+
+            
+        
+    
+        var marker_41045c001da943c6bd33e5adedb6f3e6 = L.marker(
+            [37.6436199, -121.8676464],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_29e9c9ae5e5c42c89c53c6294182efa1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_41045c001da943c6bd33e5adedb6f3e6.setIcon(icon_29e9c9ae5e5c42c89c53c6294182efa1);
+            
+    
+            var popup_7d0eac90c73b4b27bbcae6b87688f4f0 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d7e635145c3b4a0c81f87d8b897b4752 = $('<div id="html_d7e635145c3b4a0c81f87d8b897b4752" style="width: 100.0%; height: 100.0%;">CITY OF PLEASANTON nan PLEASANTON CA 94566</div>')[0];
+                popup_7d0eac90c73b4b27bbcae6b87688f4f0.setContent(html_d7e635145c3b4a0c81f87d8b897b4752);
+            
+
+            marker_41045c001da943c6bd33e5adedb6f3e6.bindPopup(popup_7d0eac90c73b4b27bbcae6b87688f4f0)
+            ;
+
+            
+        
+    
+        var marker_53d9dc9b198e4b3387f4ffc8a4454366 = L.marker(
+            [37.9817137, -120.3677451],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_637316315f5644e79dd57d997320c93d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_53d9dc9b198e4b3387f4ffc8a4454366.setIcon(icon_637316315f5644e79dd57d997320c93d);
+            
+    
+            var popup_b793be97297d44528a66c173c82b44a9 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_3faa965e3c504d008d597b50c7fbc2f5 = $('<div id="html_3faa965e3c504d008d597b50c7fbc2f5" style="width: 100.0%; height: 100.0%;">BLOOMFIELD CAMPGROUND #1 & #2 19777 GREENLEY RD SONORA nan 95370</div>')[0];
+                popup_b793be97297d44528a66c173c82b44a9.setContent(html_3faa965e3c504d008d597b50c7fbc2f5);
+            
+
+            marker_53d9dc9b198e4b3387f4ffc8a4454366.bindPopup(popup_b793be97297d44528a66c173c82b44a9)
+            ;
+
+            
+        
+    
+        var marker_1d741e5338e245a783123d23f44c63a6 = L.marker(
+            [37.9817137, -120.3677451],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_67c5c226d4414e43b3b8f80500c039a5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1d741e5338e245a783123d23f44c63a6.setIcon(icon_67c5c226d4414e43b3b8f80500c039a5);
+            
+    
+            var popup_94c6bf8fd676450f9d3fa099e7601083 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0d68e3fd70a2413491aa347a591f2066 = $('<div id="html_0d68e3fd70a2413491aa347a591f2066" style="width: 100.0%; height: 100.0%;">HIGHLAND LAKES CAMPGROUND 19777 GREENLEY RD SONORA nan 95370</div>')[0];
+                popup_94c6bf8fd676450f9d3fa099e7601083.setContent(html_0d68e3fd70a2413491aa347a591f2066);
+            
+
+            marker_1d741e5338e245a783123d23f44c63a6.bindPopup(popup_94c6bf8fd676450f9d3fa099e7601083)
+            ;
+
+            
+        
+    
+        var marker_8a4fbaa780814395afd681634b3bf26b = L.marker(
+            [40.7476978, -73.97397600000001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_de47f444463c4031bbd4af03627a1c8b = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_8a4fbaa780814395afd681634b3bf26b.setIcon(icon_de47f444463c4031bbd4af03627a1c8b);
+            
+    
+            var popup_31513f51fefe4b0e80feaddb32dfb656 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_e5047d12f6c84b879252084b2ae5d387 = $('<div id="html_e5047d12f6c84b879252084b2ae5d387" style="width: 100.0%; height: 100.0%;">GROVER HOT SPRINGS STATE PARK nan nan nan nan</div>')[0];
+                popup_31513f51fefe4b0e80feaddb32dfb656.setContent(html_e5047d12f6c84b879252084b2ae5d387);
+            
+
+            marker_8a4fbaa780814395afd681634b3bf26b.bindPopup(popup_31513f51fefe4b0e80feaddb32dfb656)
+            ;
+
+            
+        
+    
+        var marker_80ce76e6fec54ecc9c99623866dd02d5 = L.marker(
+            [40.7476978, -73.97397600000001],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_6be3c16cc2da42e99f0ce6fea8f9206a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_80ce76e6fec54ecc9c99623866dd02d5.setIcon(icon_6be3c16cc2da42e99f0ce6fea8f9206a);
+            
+    
+            var popup_ecb41bec31f0427899399b2479cb9b61 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_cedc75bb5e2644baa65133c431b6ed5a = $('<div id="html_cedc75bb5e2644baa65133c431b6ed5a" style="width: 100.0%; height: 100.0%;">ALPINE SR CENTER nan nan nan nan</div>')[0];
+                popup_ecb41bec31f0427899399b2479cb9b61.setContent(html_cedc75bb5e2644baa65133c431b6ed5a);
+            
+
+            marker_80ce76e6fec54ecc9c99623866dd02d5.bindPopup(popup_ecb41bec31f0427899399b2479cb9b61)
+            ;
+
+            
+        
+    
+        var marker_3b6dffeeb8404bb8b52edc481384afdc = L.marker(
+            [38.766357, -119.8088535],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_62eeb9472f614d64b1b80f12747ce8fa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3b6dffeeb8404bb8b52edc481384afdc.setIcon(icon_62eeb9472f614d64b1b80f12747ce8fa);
+            
+    
+            var popup_cc09e5237e4b4f8aa57d8a6f7ce811b8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d0e9b3dc63ee483cab794e262b7d189b = $('<div id="html_d0e9b3dc63ee483cab794e262b7d189b" style="width: 100.0%; height: 100.0%;">DIAMOND VALLEY SCHOOL 43 HAWKSIDE DRIVE MARKLEEVILLE CA 96120</div>')[0];
+                popup_cc09e5237e4b4f8aa57d8a6f7ce811b8.setContent(html_d0e9b3dc63ee483cab794e262b7d189b);
+            
+
+            marker_3b6dffeeb8404bb8b52edc481384afdc.bindPopup(popup_cc09e5237e4b4f8aa57d8a6f7ce811b8)
+            ;
+
+            
+        
+    
+        var marker_19c83cd6405c4ee98fca9a9548f1a5ea = L.marker(
+            [38.7768838, -119.822525],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_1699db599077472fa0f8dc76d633f7f4 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_19c83cd6405c4ee98fca9a9548f1a5ea.setIcon(icon_1699db599077472fa0f8dc76d633f7f4);
+            
+    
+            var popup_11bc76b7ad674a13be7bb83befb6b353 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_f0df83131be74b86b9af09c00ecb6776 = $('<div id="html_f0df83131be74b86b9af09c00ecb6776" style="width: 100.0%; height: 100.0%;">WOODFORDS STATION 290 PONY EXPRESS ROAD WOODFORDS CA 96120</div>')[0];
+                popup_11bc76b7ad674a13be7bb83befb6b353.setContent(html_f0df83131be74b86b9af09c00ecb6776);
+            
+
+            marker_19c83cd6405c4ee98fca9a9548f1a5ea.bindPopup(popup_11bc76b7ad674a13be7bb83befb6b353)
+            ;
+
+            
+        
+    
+        var marker_09cf4f87657e410d93f1cf3be5b614e3 = L.marker(
+            [38.6937227, -119.7796826],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_39c26ce1b8d8414f88f27a2c74e5bb16 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_09cf4f87657e410d93f1cf3be5b614e3.setIcon(icon_39c26ce1b8d8414f88f27a2c74e5bb16);
+            
+    
+            var popup_56f5f36e9c37456886b9e4fe3481219b = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0b07368c8b9c4a51a95a7ada02fa4a30 = $('<div id="html_0b07368c8b9c4a51a95a7ada02fa4a30" style="width: 100.0%; height: 100.0%;">WOODFORDS MUTUAL WATER COMPANY PO BOX 191 MARKLEEVILLE CA 96120</div>')[0];
+                popup_56f5f36e9c37456886b9e4fe3481219b.setContent(html_0b07368c8b9c4a51a95a7ada02fa4a30);
+            
+
+            marker_09cf4f87657e410d93f1cf3be5b614e3.bindPopup(popup_56f5f36e9c37456886b9e4fe3481219b)
+            ;
+
+            
+        
+    
+        var marker_674bf7e14df74ff0b1c5d3a5e2274012 = L.marker(
+            [38.6937227, -119.7796826],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_d6e49e0758714702ba7ed38b3cd8c67e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_674bf7e14df74ff0b1c5d3a5e2274012.setIcon(icon_d6e49e0758714702ba7ed38b3cd8c67e);
+            
+    
+            var popup_39bddf321bde4e21abb82b693e096f9f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_c0ed881195404c58b19ee4a2fa6ae3b7 = $('<div id="html_c0ed881195404c58b19ee4a2fa6ae3b7" style="width: 100.0%; height: 100.0%;">MARKLEEVILLE WATER CO. PO BOX 131 MARKLEEVILLE CA 96120</div>')[0];
+                popup_39bddf321bde4e21abb82b693e096f9f.setContent(html_c0ed881195404c58b19ee4a2fa6ae3b7);
+            
+
+            marker_674bf7e14df74ff0b1c5d3a5e2274012.bindPopup(popup_39bddf321bde4e21abb82b693e096f9f)
+            ;
+
+            
+        
+    
+        var marker_65988e3777534891a242a6fc23ff0e74 = L.marker(
+            [38.1949577, -120.3641658],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_08313b0816344316af60b8bbb3b328c7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_65988e3777534891a242a6fc23ff0e74.setIcon(icon_08313b0816344316af60b8bbb3b328c7);
+            
+    
+            var popup_030034a01bf94010bcb0f1d820b750e8 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_7d6d29c40afd4b219908182860bccc43 = $('<div id="html_7d6d29c40afd4b219908182860bccc43" style="width: 100.0%; height: 100.0%;">PACIFIC VALLEY CAMPGROUND nan HATHAWAY PINES CA 95233</div>')[0];
+                popup_030034a01bf94010bcb0f1d820b750e8.setContent(html_7d6d29c40afd4b219908182860bccc43);
+            
+
+            marker_65988e3777534891a242a6fc23ff0e74.bindPopup(popup_030034a01bf94010bcb0f1d820b750e8)
+            ;
+
+            
+        
+    
+        var marker_837cc789b56d43fdb35c1537b301729d = L.marker(
+            [38.6847514, -120.0651665],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_c79c471473af4cb2b0bae57cb47daeab = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_837cc789b56d43fdb35c1537b301729d.setIcon(icon_c79c471473af4cb2b0bae57cb47daeab);
+            
+    
+            var popup_c8137ba62b194603ad9f22c50a2cda67 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_592f01ed08d14c52a9fdedf4d3068ef4 = $('<div id="html_592f01ed08d14c52a9fdedf4d3068ef4" style="width: 100.0%; height: 100.0%;">CAPLES LAKE RESORT PO BOX 8 KIRKWOOD CA 95646</div>')[0];
+                popup_c8137ba62b194603ad9f22c50a2cda67.setContent(html_592f01ed08d14c52a9fdedf4d3068ef4);
+            
+
+            marker_837cc789b56d43fdb35c1537b301729d.bindPopup(popup_c8137ba62b194603ad9f22c50a2cda67)
+            ;
+
+            
+        
+    
+        var marker_3fab97186f4246cca66ade4cd6284310 = L.marker(
+            [37.3041615, -122.0407056],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_79d13702198a4b368649de0cf0f4d5b5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3fab97186f4246cca66ade4cd6284310.setIcon(icon_79d13702198a4b368649de0cf0f4d5b5);
+            
+    
+            var popup_60df806c20c640d1afb37d5dc4cbf65e = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_26dc7ed4d64443a484a66cd28f4590ca = $('<div id="html_26dc7ed4d64443a484a66cd28f4590ca" style="width: 100.0%; height: 100.0%;">LAKE ALPINE IMPROVEMENT ASSN 2/BEE GULCH 1149 HOLLYHEAD LANE CUPERTINO CA 95014</div>')[0];
+                popup_60df806c20c640d1afb37d5dc4cbf65e.setContent(html_26dc7ed4d64443a484a66cd28f4590ca);
+            
+
+            marker_3fab97186f4246cca66ade4cd6284310.bindPopup(popup_60df806c20c640d1afb37d5dc4cbf65e)
+            ;
+
+            
+        
+    
+        var marker_eecd5ea92ac042438902af55badee744 = L.marker(
+            [39.4015887, -119.7154783],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_871e2e3bbae04981b2dfc4baf887a664 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_eecd5ea92ac042438902af55badee744.setIcon(icon_871e2e3bbae04981b2dfc4baf887a664);
+            
+    
+            var popup_a184fc9433144804b39987360af30fd2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_fe47ad3b6a9f44daa1ce6b84c590eb5a = $('<div id="html_fe47ad3b6a9f44daa1ce6b84c590eb5a" style="width: 100.0%; height: 100.0%;">LAKE ALPINE IMP. ASSOC. 13975 RANCHO VERDE RENO NV 89511</div>')[0];
+                popup_a184fc9433144804b39987360af30fd2.setContent(html_fe47ad3b6a9f44daa1ce6b84c590eb5a);
+            
+
+            marker_eecd5ea92ac042438902af55badee744.bindPopup(popup_a184fc9433144804b39987360af30fd2)
+            ;
+
+            
+        
+    
+        var marker_108983479f234f358b6b1172a55b4606 = L.marker(
+            [38.7746318, -119.9030552],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_d5fd5d88c826493f8b4ef790fa1cbbf7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_108983479f234f358b6b1172a55b4606.setIcon(icon_d5fd5d88c826493f8b4ef790fa1cbbf7);
+            
+    
+            var popup_59767b0003304f7a8ac66453d33edf52 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_377d04a2919645df97396f4c132ebe16 = $('<div id="html_377d04a2919645df97396f4c132ebe16" style="width: 100.0%; height: 100.0%;">SORENSON S RESORT 14255 HWY 88 HOPE VALLEY CA 96120</div>')[0];
+                popup_59767b0003304f7a8ac66453d33edf52.setContent(html_377d04a2919645df97396f4c132ebe16);
+            
+
+            marker_108983479f234f358b6b1172a55b4606.bindPopup(popup_59767b0003304f7a8ac66453d33edf52)
+            ;
+
+            
+        
+    
+        var marker_cefe47969813479d8a48216ad15767f6 = L.marker(
+            [38.6937227, -119.7796826],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_7f3f5cba5d3440d9b94c8e02fe825ad2 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cefe47969813479d8a48216ad15767f6.setIcon(icon_7f3f5cba5d3440d9b94c8e02fe825ad2);
+            
+    
+            var popup_30d107952fd3476a88fd0360828f24d2 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d6436a225c2f4726958964cc2a22ed47 = $('<div id="html_d6436a225c2f4726958964cc2a22ed47" style="width: 100.0%; height: 100.0%;">SHAY CREEK SUMMER HOME TRACT PO BOX 149 MARKLEEVILLE CA 96120</div>')[0];
+                popup_30d107952fd3476a88fd0360828f24d2.setContent(html_d6436a225c2f4726958964cc2a22ed47);
+            
+
+            marker_cefe47969813479d8a48216ad15767f6.bindPopup(popup_30d107952fd3476a88fd0360828f24d2)
+            ;
+
+            
+        
+    
+        var marker_d5956dbb32c0470690a0b2702cf75aa2 = L.marker(
+            [38.6896334, -119.7647615],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_f2454acc16af4153813ce584afd00f9a = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d5956dbb32c0470690a0b2702cf75aa2.setIcon(icon_f2454acc16af4153813ce584afd00f9a);
+            
+    
+            var popup_3b104f287b124c8c9dd76ffae401968f = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_5e0a1a555f3c43468dc2b8a2d3899031 = $('<div id="html_5e0a1a555f3c43468dc2b8a2d3899031" style="width: 100.0%; height: 100.0%;">CARSON RIVER RESORT 12399 HIGHWAY 89 MARKLEEVILLE CA 96120</div>')[0];
+                popup_3b104f287b124c8c9dd76ffae401968f.setContent(html_5e0a1a555f3c43468dc2b8a2d3899031);
+            
+
+            marker_d5956dbb32c0470690a0b2702cf75aa2.bindPopup(popup_3b104f287b124c8c9dd76ffae401968f)
+            ;
+
+            
+        
+    
+        var marker_d3710d2429ba40328aa86f781b6c91c1 = L.marker(
+            [37.8727719, -122.0509397],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_05ff558cb82347f38586e7298db592aa = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_d3710d2429ba40328aa86f781b6c91c1.setIcon(icon_05ff558cb82347f38586e7298db592aa);
+            
+    
+            var popup_639e7005cf0b43f38230afe6b6270af7 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_30b120b1b8c3449faba5c91d4bbb74c2 = $('<div id="html_30b120b1b8c3449faba5c91d4bbb74c2" style="width: 100.0%; height: 100.0%;">SORENSON S HOA 326 CREST AVE. WALNUT CREEK CA 94595</div>')[0];
+                popup_639e7005cf0b43f38230afe6b6270af7.setContent(html_30b120b1b8c3449faba5c91d4bbb74c2);
+            
+
+            marker_d3710d2429ba40328aa86f781b6c91c1.bindPopup(popup_639e7005cf0b43f38230afe6b6270af7)
+            ;
+
+            
+        
+    
+        var marker_9cb5557ff9504fdda5a649de02fb7646 = L.marker(
+            [37.98255290000001, -120.3668925],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_8c91da1845d14553a45c0b11efdea253 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9cb5557ff9504fdda5a649de02fb7646.setIcon(icon_8c91da1845d14553a45c0b11efdea253);
+            
+    
+            var popup_eee514c2cfc540329873267bea1547cb = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_4e57114671a94e11b4810d37632a10d9 = $('<div id="html_4e57114671a94e11b4810d37632a10d9" style="width: 100.0%; height: 100.0%;">LAKE ALPINE REC. AREA 19777 GREENLEY RD. SONORA CA 95370</div>')[0];
+                popup_eee514c2cfc540329873267bea1547cb.setContent(html_4e57114671a94e11b4810d37632a10d9);
+            
+
+            marker_9cb5557ff9504fdda5a649de02fb7646.bindPopup(popup_eee514c2cfc540329873267bea1547cb)
+            ;
+
+            
+        
+    
+        var marker_9572b66213334f7f83d09611c003e9b5 = L.marker(
+            [38.770964, -119.816854],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_7cd99254a8844fd5810afca8c2d1af39 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9572b66213334f7f83d09611c003e9b5.setIcon(icon_7cd99254a8844fd5810afca8c2d1af39);
+            
+    
+            var popup_8820afc3c4154495a94ebbd88a2e4b20 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_56de940452204b4dba155243330e86f5 = $('<div id="html_56de940452204b4dba155243330e86f5" style="width: 100.0%; height: 100.0%;">TURTLE ROCK COUNTY PARK 50 DIAMOND VALLEY ROAD MARKLEEVILLE CA 96120</div>')[0];
+                popup_8820afc3c4154495a94ebbd88a2e4b20.setContent(html_56de940452204b4dba155243330e86f5);
+            
+
+            marker_9572b66213334f7f83d09611c003e9b5.bindPopup(popup_8820afc3c4154495a94ebbd88a2e4b20)
+            ;
+
+            
+        
+    
+        var marker_ce3532969e0e4202839efe6cbe718b53 = L.marker(
+            [38.7485499, -119.9421411],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_e042403cf21c4e37a27288b3cf2ac43f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_ce3532969e0e4202839efe6cbe718b53.setIcon(icon_e042403cf21c4e37a27288b3cf2ac43f);
+            
+    
+            var popup_151ac36e0cc247f585654f172a4713fe = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_51d23a41faa74bfa85a048273b1f6ee4 = $('<div id="html_51d23a41faa74bfa85a048273b1f6ee4" style="width: 100.0%; height: 100.0%;">HOPE VALLEY RESORT 114655 HWY 88 HOPE VALLEY CA 96120</div>')[0];
+                popup_151ac36e0cc247f585654f172a4713fe.setContent(html_51d23a41faa74bfa85a048273b1f6ee4);
+            
+
+            marker_ce3532969e0e4202839efe6cbe718b53.bindPopup(popup_151ac36e0cc247f585654f172a4713fe)
+            ;
+
+            
+        
+    
+        var marker_054a6a78c3aa418e8b90be8a64d4d887 = L.marker(
+            [38.6937227, -119.7796826],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_2924563bc63f46a78c43d9edcb972b11 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_054a6a78c3aa418e8b90be8a64d4d887.setIcon(icon_2924563bc63f46a78c43d9edcb972b11);
+            
+    
+            var popup_4e3ceb86df894965af4f70b76baf5364 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1be79caff42b4cffa0f24f75cd5cefd0 = $('<div id="html_1be79caff42b4cffa0f24f75cd5cefd0" style="width: 100.0%; height: 100.0%;">WOODFORD S INN P O BOX 420 MARKLEEVILLE CA 96120</div>')[0];
+                popup_4e3ceb86df894965af4f70b76baf5364.setContent(html_1be79caff42b4cffa0f24f75cd5cefd0);
+            
+
+            marker_054a6a78c3aa418e8b90be8a64d4d887.bindPopup(popup_4e3ceb86df894965af4f70b76baf5364)
+            ;
+
+            
+        
+    
+        var marker_a46cfa4cedc948e4bda78ad2b179a72a = L.marker(
+            [38.9283883, -119.7298951],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_f96a66df9d5b4747a25478402be45d57 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a46cfa4cedc948e4bda78ad2b179a72a.setIcon(icon_f96a66df9d5b4747a25478402be45d57);
+            
+    
+            var popup_57f0fe262acb40348fba1a8cadd9a6b6 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a0f46b8e24cb497ba0cc7815acda0b01 = $('<div id="html_a0f46b8e24cb497ba0cc7815acda0b01" style="width: 100.0%; height: 100.0%;">SIERRA PINES MOBILE HOME PARK PO BOX 1708 GARDNERVILLE NV 89410</div>')[0];
+                popup_57f0fe262acb40348fba1a8cadd9a6b6.setContent(html_a0f46b8e24cb497ba0cc7815acda0b01);
+            
+
+            marker_a46cfa4cedc948e4bda78ad2b179a72a.bindPopup(popup_57f0fe262acb40348fba1a8cadd9a6b6)
+            ;
+
+            
+        
+    
+        var marker_7193b1dc8baa4dd7bd14a6d3f4cfdd9a = L.marker(
+            [37.98255290000001, -120.3668925],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_0126cefea85e4eb7b695262e04a3d40f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_7193b1dc8baa4dd7bd14a6d3f4cfdd9a.setIcon(icon_0126cefea85e4eb7b695262e04a3d40f);
+            
+    
+            var popup_8ee9498184b04663a0c2eb1b2155d588 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_43e8a35b32a94ed28085719581312808 = $('<div id="html_43e8a35b32a94ed28085719581312808" style="width: 100.0%; height: 100.0%;">BLOOMFIELD CG #1 19777 GREENLEY RD. SONORA CA 95370</div>')[0];
+                popup_8ee9498184b04663a0c2eb1b2155d588.setContent(html_43e8a35b32a94ed28085719581312808);
+            
+
+            marker_7193b1dc8baa4dd7bd14a6d3f4cfdd9a.bindPopup(popup_8ee9498184b04663a0c2eb1b2155d588)
+            ;
+
+            
+        
+    
+        var marker_1790336b9b5246769dfb1eb053e5cc2c = L.marker(
+            [37.9815398, -120.3684951],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_05be3a83730441c0ad822f1df9738a6e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1790336b9b5246769dfb1eb053e5cc2c.setIcon(icon_05be3a83730441c0ad822f1df9738a6e);
+            
+    
+            var popup_f73369e484aa493f840b19d9ce11d74d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b1c672f1d439441f991450478656b80b = $('<div id="html_b1c672f1d439441f991450478656b80b" style="width: 100.0%; height: 100.0%;">HIGHLAND LKS #1 119777 GREENLEY RD. SONORA CA 95370</div>')[0];
+                popup_f73369e484aa493f840b19d9ce11d74d.setContent(html_b1c672f1d439441f991450478656b80b);
+            
+
+            marker_1790336b9b5246769dfb1eb053e5cc2c.bindPopup(popup_f73369e484aa493f840b19d9ce11d74d)
+            ;
+
+            
+        
+    
+        var marker_c1c9865b5efa4f7992c3850c060d2a8d = L.marker(
+            [37.9817137, -120.3677451],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_d299a902b7dc44ccb2d070d4669f31ec = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_c1c9865b5efa4f7992c3850c060d2a8d.setIcon(icon_d299a902b7dc44ccb2d070d4669f31ec);
+            
+    
+            var popup_cbc55284fb7d4ba2bd7fa868d718347c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_2714ec0fe070452ab77dab74c2f1b7d2 = $('<div id="html_2714ec0fe070452ab77dab74c2f1b7d2" style="width: 100.0%; height: 100.0%;">HIGHLAND LAKES #2 USFS-STANISLAUSE NF SONORA CA 95370</div>')[0];
+                popup_cbc55284fb7d4ba2bd7fa868d718347c.setContent(html_2714ec0fe070452ab77dab74c2f1b7d2);
+            
+
+            marker_c1c9865b5efa4f7992c3850c060d2a8d.bindPopup(popup_cbc55284fb7d4ba2bd7fa868d718347c)
+            ;
+
+            
+        
+    
+        var marker_898c16cf74c34bb1ac25374b2b4ea0cf = L.marker(
+            [39.15228889999999, -119.7677114],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_ce37d96c56dd4847b86e707c47678b5e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_898c16cf74c34bb1ac25374b2b4ea0cf.setIcon(icon_ce37d96c56dd4847b86e707c47678b5e);
+            
+    
+            var popup_b52614bd147c461ea55159f27e9b7565 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_6c5085bd371a40948e9dfb2ce36174ea = $('<div id="html_6c5085bd371a40948e9dfb2ce36174ea" style="width: 100.0%; height: 100.0%;">HOPE VALLEY CG 1536 S CARSON ST. CARSON CITY NV 89701</div>')[0];
+                popup_b52614bd147c461ea55159f27e9b7565.setContent(html_6c5085bd371a40948e9dfb2ce36174ea);
+            
+
+            marker_898c16cf74c34bb1ac25374b2b4ea0cf.bindPopup(popup_b52614bd147c461ea55159f27e9b7565)
+            ;
+
+            
+        
+    
+        var marker_5f624e85b1c9457ab160bbc1519ef78d = L.marker(
+            [39.15228889999999, -119.7677114],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_b275970fc15441c784832b82233b96f7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5f624e85b1c9457ab160bbc1519ef78d.setIcon(icon_b275970fc15441c784832b82233b96f7);
+            
+    
+            var popup_a14153331f6f47269dd08f1698d870a5 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_437359d4335248e1b935fd0bf5a6672f = $('<div id="html_437359d4335248e1b935fd0bf5a6672f" style="width: 100.0%; height: 100.0%;">SILVER CREEK CG 1536 S CARSON ST. CARSON CITY NV 89701</div>')[0];
+                popup_a14153331f6f47269dd08f1698d870a5.setContent(html_437359d4335248e1b935fd0bf5a6672f);
+            
+
+            marker_5f624e85b1c9457ab160bbc1519ef78d.bindPopup(popup_a14153331f6f47269dd08f1698d870a5)
+            ;
+
+            
+        
+    
+        var marker_513e9aa8435d4f7a8e6484b3cf97d806 = L.marker(
+            [39.15228889999999, -119.7677114],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_0edc2af83ddf41b39993bb3098de492d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_513e9aa8435d4f7a8e6484b3cf97d806.setIcon(icon_0edc2af83ddf41b39993bb3098de492d);
+            
+    
+            var popup_9ca7f998506c4b1a9e284df6af31e623 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_1ccc538317c64f7183772104c9f0845b = $('<div id="html_1ccc538317c64f7183772104c9f0845b" style="width: 100.0%; height: 100.0%;">SNOWSHOE SPRINGS CG 1536 S. CARSON ST. CARSON CITY NV 89701</div>')[0];
+                popup_9ca7f998506c4b1a9e284df6af31e623.setContent(html_1ccc538317c64f7183772104c9f0845b);
+            
+
+            marker_513e9aa8435d4f7a8e6484b3cf97d806.bindPopup(popup_9ca7f998506c4b1a9e284df6af31e623)
+            ;
+
+            
+        
+    
+        var marker_6068a4749f1a4c518ed5f1df26deaafd = L.marker(
+            [39.15228889999999, -119.7677114],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_5de286e48b184deeb2e2f69f57cd78b1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6068a4749f1a4c518ed5f1df26deaafd.setIcon(icon_5de286e48b184deeb2e2f69f57cd78b1);
+            
+    
+            var popup_130877ac97394b30a8cd5777fea88370 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_a4e6293fe146465fbfaae69ec8e04169 = $('<div id="html_a4e6293fe146465fbfaae69ec8e04169" style="width: 100.0%; height: 100.0%;">CRYSTAL SPRINGS CG 1536 S. CARSON ST. CARSON CITY NV 89701</div>')[0];
+                popup_130877ac97394b30a8cd5777fea88370.setContent(html_a4e6293fe146465fbfaae69ec8e04169);
+            
+
+            marker_6068a4749f1a4c518ed5f1df26deaafd.bindPopup(popup_130877ac97394b30a8cd5777fea88370)
+            ;
+
+            
+        
+    
+        var marker_5253b06102b94dc4b45c031228cdbb71 = L.marker(
+            [38.7211242, -120.8295709],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_f59a617839dd48d1b2f41bdb4a75fc96 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5253b06102b94dc4b45c031228cdbb71.setIcon(icon_f59a617839dd48d1b2f41bdb4a75fc96);
+            
+    
+            var popup_6ba901975a414e27a60ab201dee844e3 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_736e94eec9b14e66b5eb1eb6272deffb = $('<div id="html_736e94eec9b14e66b5eb1eb6272deffb" style="width: 100.0%; height: 100.0%;">WOODS LAKE REC. AREA 100 FORNI RD. PLACERVILLE CA 95667</div>')[0];
+                popup_6ba901975a414e27a60ab201dee844e3.setContent(html_736e94eec9b14e66b5eb1eb6272deffb);
+            
+
+            marker_5253b06102b94dc4b45c031228cdbb71.bindPopup(popup_6ba901975a414e27a60ab201dee844e3)
+            ;
+
+            
+        
+    
+        var marker_a9803c9f0f80455abd8ae2bcfa9d9099 = L.marker(
+            [39.1924225, -119.7508809],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_da24263b4ece42839016f3f7e2552d97 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a9803c9f0f80455abd8ae2bcfa9d9099.setIcon(icon_da24263b4ece42839016f3f7e2552d97);
+            
+    
+            var popup_d705946287bd4e8981843e4af4fa87ec = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d7f2aa7ba1ce47c698ec8c712a4fe4a6 = $('<div id="html_d7f2aa7ba1ce47c698ec8c712a4fe4a6" style="width: 100.0%; height: 100.0%;">INDIAN CREEK RES. CG (BLM) 1535 HOT SPRINGS RD. CARSON CITY NV 89706</div>')[0];
+                popup_d705946287bd4e8981843e4af4fa87ec.setContent(html_d7f2aa7ba1ce47c698ec8c712a4fe4a6);
+            
+
+            marker_a9803c9f0f80455abd8ae2bcfa9d9099.bindPopup(popup_d705946287bd4e8981843e4af4fa87ec)
+            ;
+
+            
+        
+    
+        var marker_fa79bacb18fd4ccf9364f05a960b11b0 = L.marker(
+            [38.7211242, -120.8295709],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_746586393b2c490ab3469a3928557f71 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_fa79bacb18fd4ccf9364f05a960b11b0.setIcon(icon_746586393b2c490ab3469a3928557f71);
+            
+    
+            var popup_2a5f0d44363a42dd952f3b6645d268da = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_032aafd6acdd4990bc07b91246805c1d = $('<div id="html_032aafd6acdd4990bc07b91246805c1d" style="width: 100.0%; height: 100.0%;">CAPLES LAKE CG 100 FORNI RD. PLACERVILLE CA 95667</div>')[0];
+                popup_2a5f0d44363a42dd952f3b6645d268da.setContent(html_032aafd6acdd4990bc07b91246805c1d);
+            
+
+            marker_fa79bacb18fd4ccf9364f05a960b11b0.bindPopup(popup_2a5f0d44363a42dd952f3b6645d268da)
+            ;
+
+            
+        
+    
+        var marker_827e662289b94e1ba1cbc0ce7083722c = L.marker(
+            [38.0385049, -120.2295831],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_f858c4ca6aeb474fbd1d44399eb7cf39 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_827e662289b94e1ba1cbc0ce7083722c.setIcon(icon_f858c4ca6aeb474fbd1d44399eb7cf39);
+            
+    
+            var popup_ca6be42d4c414be8ac9549a61490ef6d = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_ebbe2b717c2c4ef1bf5b152c0fae3857 = $('<div id="html_ebbe2b717c2c4ef1bf5b152c0fae3857" style="width: 100.0%; height: 100.0%;">CAMP LIAHONA PO BOX 1747 TWAIN HARTE CA 95383</div>')[0];
+                popup_ca6be42d4c414be8ac9549a61490ef6d.setContent(html_ebbe2b717c2c4ef1bf5b152c0fae3857);
+            
+
+            marker_827e662289b94e1ba1cbc0ce7083722c.bindPopup(popup_ca6be42d4c414be8ac9549a61490ef6d)
+            ;
+
+            
+        
+    
+        var marker_3c99ea128d0b45c4b8d79a4cd6d9a8c1 = L.marker(
+            [38.0385049, -120.2295831],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_55a1317e1ae84235bf60d7f27af15c77 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_3c99ea128d0b45c4b8d79a4cd6d9a8c1.setIcon(icon_55a1317e1ae84235bf60d7f27af15c77);
+            
+    
+            var popup_47d4f4e0ef3d4f32bf2d33cd232d312c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0bd8965407a44bdfa44b2c5b6a9f2db3 = $('<div id="html_0bd8965407a44bdfa44b2c5b6a9f2db3" style="width: 100.0%; height: 100.0%;">CAMP PEACEFUL PINES #3 CLARKS FORK RD DARDANELLE CA 95314</div>')[0];
+                popup_47d4f4e0ef3d4f32bf2d33cd232d312c.setContent(html_0bd8965407a44bdfa44b2c5b6a9f2db3);
+            
+
+            marker_3c99ea128d0b45c4b8d79a4cd6d9a8c1.bindPopup(popup_47d4f4e0ef3d4f32bf2d33cd232d312c)
+            ;
+
+            
+        
+    
+        var marker_86e0cdc7c3d94e6097f60ca2beff392c = L.marker(
+            [38.4653569, -120.0403519],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_0db26deb87364bf88204422d0b2fe015 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_86e0cdc7c3d94e6097f60ca2beff392c.setIcon(icon_0db26deb87364bf88204422d0b2fe015);
+            
+    
+            var popup_db0bfe34adb34919a6939add6965372c = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_b1f7adf11928432bb6160d3c7016e877 = $('<div id="html_b1f7adf11928432bb6160d3c7016e877" style="width: 100.0%; height: 100.0%;">BEAR VALLEY SKI COMPANY PO BOX 5038 BEAR VALLEY CA 95223</div>')[0];
+                popup_db0bfe34adb34919a6939add6965372c.setContent(html_b1f7adf11928432bb6160d3c7016e877);
+            
+
+            marker_86e0cdc7c3d94e6097f60ca2beff392c.bindPopup(popup_db0bfe34adb34919a6939add6965372c)
+            ;
+
+            
+        
+    
+        var marker_030fb6e0853c45ad8dff186f7533fcf4 = L.marker(
+            [38.7692681, -119.816918],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_4f1f8f37898f4545b5e4e0678912f50d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_030fb6e0853c45ad8dff186f7533fcf4.setIcon(icon_4f1f8f37898f4545b5e4e0678912f50d);
+            
+    
+            var popup_5355e63cb24d41c98e20da87b128e152 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_158b47946d7d4d2fa844432300394f05 = $('<div id="html_158b47946d7d4d2fa844432300394f05" style="width: 100.0%; height: 100.0%;">CO. OF ALPINE SOCIAL SERVICES BLDG. 75 DIAMOND VALLEY RD. MARKLEEVILLE CA 96120</div>')[0];
+                popup_5355e63cb24d41c98e20da87b128e152.setContent(html_158b47946d7d4d2fa844432300394f05);
+            
+
+            marker_030fb6e0853c45ad8dff186f7533fcf4.bindPopup(popup_5355e63cb24d41c98e20da87b128e152)
+            ;
+
+            
+        
+    
+        var marker_e9c7bd438cee432f9bebbef18fce9f56 = L.marker(
+            [38.6950524, -119.7801146],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_1acbce9532dc4a40b80fefa11fb9451e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_e9c7bd438cee432f9bebbef18fce9f56.setIcon(icon_1acbce9532dc4a40b80fefa11fb9451e);
+            
+    
+            var popup_17e4e070d0744a3aadcb5ff9ff669974 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_0166cff65f1f4aff9a127828a473ddc7 = $('<div id="html_0166cff65f1f4aff9a127828a473ddc7" style="width: 100.0%; height: 100.0%;">ALPINE CO SENIOR CITIZEN CTR PO BOX                    3 MARKLEEVILLE CA 96120</div>')[0];
+                popup_17e4e070d0744a3aadcb5ff9ff669974.setContent(html_0166cff65f1f4aff9a127828a473ddc7);
+            
+
+            marker_e9c7bd438cee432f9bebbef18fce9f56.bindPopup(popup_17e4e070d0744a3aadcb5ff9ff669974)
+            ;
+
+            
+        
+    
+        var marker_6b27fe663646451c9699f923f0b3cb11 = L.marker(
+            [38.5257732, -121.3897679],
+            {
+                icon: new L.Icon.Default()
+                }
+            ).addTo(map_f1cda5b7669a4cc39d0a653709c0c2a0);
+        
+    
+
+                var icon_112845190677400ab38156549fddbf95 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6b27fe663646451c9699f923f0b3cb11.setIcon(icon_112845190677400ab38156549fddbf95);
+            
+    
+            var popup_317640be192f4095a461b51e96514979 = L.popup({maxWidth: '300'
+            
+            });
+
+            
+                var html_d0fa5a39d1584ac38cb1f054536bb032 = $('<div id="html_d0fa5a39d1584ac38cb1f054536bb032" style="width: 100.0%; height: 100.0%;">BLUE LAKES C.G. DAM & MID 5555 FLORIN-PERKINS RD. SACRAMENTO CA 95826</div>')[0];
+                popup_317640be192f4095a461b51e96514979.setContent(html_d0fa5a39d1584ac38cb1f054536bb032);
+            
+
+            marker_6b27fe663646451c9699f923f0b3cb11.bindPopup(popup_317640be192f4095a461b51e96514979)
+            ;
+
+            
+        
+</script>
