@@ -20,14 +20,22 @@ for index, row in watsysDf.iterrows():
 	print(address)
 	row['updatedAddress'] = address
 	api_key = "AIzaSyCxXF9S5YimyZfj0NdbtUNeajaPPCVPGpQ"
-	api_response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}'.format(address, api_key))
-	api_response_dict = api_response.json()
+	try:
+		api_response = requests.get('https://maps.googleapis.com/maps/api/geocode/json?address={0}&key={1}'.format(address, api_key))
+		api_response_dict = api_response.json()
+
+	except requests.exceptions.Timeout:
+  		print ("Timeout occurred")
+  		pass
+
 
 	if api_response_dict['status'] == 'OK':
 		latitude = api_response_dict['results'][0]['geometry']['location']['lat']
 		longitude = api_response_dict['results'][0]['geometry']['location']['lng']
-		row['latitude'] = latitude
-		row['longitude'] = longitude
+		print(latitude, longitude)
+		watsysDf.loc[index,'latitude'] = latitude
+		watsysDf.loc[index,'longitude'] = longitude
 
+watsysDf.head()
 cols_to_keep = ['SYSTEM_NO', 'SYSTEM_NAM', 'ADDRESS', 'latitude', 'longitude']
-watsysDf[cols_to_keep].to_json('waterSources.json')
+watsysDf[cols_to_keep].to_json('waterSourcesLarge.json', orient='records')
